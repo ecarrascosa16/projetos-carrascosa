@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --cor1: #167CBF;
+    --cor2: #0C598B;
+    --cor3: #F2790F;
+    --cor4: #CACACA;
+
+    --fonte-nav: 'Montserrat', Arial;
+    --fonte-titulo: 'Nunito', Arial;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header {
+    display: block;
+    position: sticky;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
+
+}
+
+header nav {
+    text-align: center;
+    padding: 32px;
+}
+
+header a {
+    padding: 5px 10px 5px 10px;
+    margin: 0px 20px 0px 0px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--fonte-nav);
+    color: var(--cor2);
+    border-radius: 50px;
+    text-decoration: none;
+    font-style: normal;    
+}
+
+header a:hover {
+    color: var(--cor1);
+}
+
+.a-especial {
+    background-image: linear-gradient(to right, #4ab2f7, #0c3b58);
+    color: white;
+}
+
+.a-especial:hover {
+    background-image: linear-gradient(to right, #4ab2f7, #106396);
+    color: white;
+}
+
+main {
+    height: 10800px;
+}
+
+main > .parceiro-bto > img {
+    width: 100%;
+}
+
+main > section.parceiro-bto > h1 {
+    margin: 30px 0px 20px 0px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    font-family: var(--fonte-titulo);
+    color: var(--cor3);
+}
+
+main > section.parceiro-bto > p {
+    margin: 10px 100px 20px 100px;
+    font-family: var(--fonte-titulo);
+    font-size: 18px;
+    text-align: justify;
+    
+}
+
+section.industria img {
+    margin-left: 100px;
+    width: 530px;
+
+}
+
+article > section .especialização-na-industria {
+    display: flex;
+    margin: -283px 0px 0px 580px;
+    background-color: #F2790F; 
+    position: absolute;
+    height: 258px;
+    width: 818px;
+}
+
+.especialização-na-industria-dentro {
+    padding: 25px 120px 10px 25px;
+}
+
+.especialização-na-industria-dentro h2 {
+
+    font-family: var(--fonte-titulo);
+    color: white;
+    padding: 5px 0px 10px 0px;
+}
+
+.especialização-na-industria-dentro p {
+    font-family: var(--fonte-titulo);
+    color: white;
+    font-size: 19px;
+}
+
+.saiba-mais {
+    display: block;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    background-color: white;
+    color: var(--cor3);
+    text-align: center;
+    text-decoration: none; 
+    padding: 15px;
+    margin: 20px 0px 0px 0px;
+    width: 100px;
+    border-radius: 30px;
+    border: 4px solid var(--cor3);
+    
+}
+
+.saiba-mais:hover {
+    background-color: var(--cor3);
+    border: 4px solid white;
+    color: white;
+    transition: .5s;
+}
+
+section.consultoria img {
+    margin-left: 868px;
+    width: 530px;
+}
+
+.consultoria-cx {
+    display: flex;
+    margin: -283px 0px 0px 100px;
+    background-color: #F2790F; 
+    position: absolute;
+    height: 258px;
+    width: 818px;
+}
+
+.consultoria-cx-dentro {
+    padding: 25px 120px 10px 25px;
+}
+
+.consultoria-cx-dentro h2 {
+    font-family: var(--fonte-titulo);
+    color: white;
+    padding: 20px 0px 10px 0px;
+}
+
+.consultoria-cx-dentro p {
+    font-family: var(--fonte-titulo);
+    color: white;
+    font-size: 19px;
+}
