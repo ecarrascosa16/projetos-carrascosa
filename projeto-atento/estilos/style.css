@@ -69,7 +69,7 @@ main > .parceiro-bto > img {
 }
 
 main > section.parceiro-bto > h1 {
-    margin: 30px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
     text-align: center;
     font-size: 45px;
     font-weight: 800;
@@ -85,6 +85,11 @@ main > section.parceiro-bto > p {
     
 }
 
+section.industria {
+    margin-bottom: 40px;
+
+}
+
 section.industria img {
     margin-left: 100px;
     width: 530px;
@@ -92,12 +97,12 @@ section.industria img {
 }
 
 article > section .especialização-na-industria {
-    display: flex;
-    margin: -283px 0px 0px 580px;
+
+    margin: -283px 100px 0px 580px;
     background-color: #F2790F; 
     position: absolute;
     height: 258px;
-    width: 818px;
+    max-width: 800px;
 }
 
 .especialização-na-industria-dentro {
