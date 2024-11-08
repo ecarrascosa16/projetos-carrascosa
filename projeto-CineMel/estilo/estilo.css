@@ -19,10 +19,12 @@
 }
 
 header {
+    position: fixed;
     background-color: var(--cor01);
     height: 100px;
+    width: 100%;
     display: flex;
-
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.418);
 }
 
 #section-header-centro {
@@ -85,4 +87,37 @@ a#login:hover {
 
 a#cadastro:hover {
     color: var(--cor04);
+
+}
+
+#painel-streamer > iframe {
+    padding-top: 100px;
+    margin: auto;
+    display: block;
+    height: 78vh;
+    width: 98vw;
+}
+
+#painel-selecao-stream {
+    
+    background-color: var(--cor02);
+    width: 620px;
+    height: 120px;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+    top: -65px;
+}
+
+#center-selecao-stream {
+    position: relative;
+    top: 11px;
+    text-align: center;
+}
+
+#painel-selecao-stream  img{
+    padding: 10px 20px 10px 20px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
 }
