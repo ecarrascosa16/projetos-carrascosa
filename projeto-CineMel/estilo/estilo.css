@@ -70,6 +70,11 @@ header > #section-header-centro > nav > #links-do-nav > a {
     text-decoration: none;
 }
 
+header > #section-header-centro > nav > #links-do-nav > a:hover {
+    color: #c0e1ff;
+    
+}
+
 #login-cadastro {
     margin: 35px 40px 0px 0px;
 }
@@ -168,4 +173,36 @@ a#cadastro:hover {
 
 .sessao-filmes {
     text-align: center;
+}
+
+footer {
+    background-color: var(--cor01);
+    height: 200px;
+}
+
+footer h1 {
+    padding: 40px 0px 0px 100px;
+}
+
+footer p{
+    width: 350px;
+    padding: 5px 0px 0px 100px;
+}
+
+#sobre-cinemel {
+    width: 500px;
+    height: 2px;
+}
+
+#contatos {
+    margin-right: 200px;
+    float: right;
+}
+
+#contatos a {
+    color: #2793F2;
+}
+
+#contatos a:hover {
+    color: #82c5ff;
 }
