@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --cor01: #020873;
@@ -9,7 +9,8 @@
     --cor04: #2793F2;
     --cor05: #D9A648;
 
-    --fonte-nav: 'Poppins'
+    --fonte-nav: 'Poppins';
+    --fonte-titulo: 'Montserrat';
 }
 
 * {
@@ -18,7 +19,13 @@
     margin: 0px;
 }
 
+body {
+    color: white;
+    background-color: var(--cor03);
+}
+
 header {
+    z-index: 1000;
     position: fixed;
     background-color: var(--cor01);
     height: 100px;
@@ -90,16 +97,21 @@ a#cadastro:hover {
 
 }
 
+#painel-streamer {
+    height: 100vh;
+}
+
 #painel-streamer > iframe {
     padding-top: 100px;
     margin: auto;
     display: block;
     height: 78vh;
     width: 98vw;
+    ;
 }
 
 #painel-selecao-stream {
-    
+
     background-color: var(--cor02);
     width: 620px;
     height: 120px;
@@ -107,12 +119,14 @@ a#cadastro:hover {
     border-radius: 5px;
     position: relative;
     top: -65px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.802);
 }
 
 #center-selecao-stream {
     position: relative;
     top: 11px;
     text-align: center;
+
 }
 
 #painel-selecao-stream  img{
@@ -120,4 +134,38 @@ a#cadastro:hover {
     width: 80px;
     height: 80px;
     margin: auto;
+}
+
+.genero {
+    margin-bottom: 50px;
+}
+
+.genero h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0px 0px 5px 82px;
+    
+}
+
+.genero img {
+    width: 207px;
+    height: 323px;
+    margin: 10px;
+    box-shadow: 10px 10px 0px var(--cor04);
+    transition: 0.3s;
+    border: 2px solid rgba(0, 0, 0, 0);
+
+}
+
+.genero img:hover {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+    border: 2px solid white;
+    transform: scale(1.09);
+    
+}
+
+.sessao-filmes {
+    text-align: center;
 }
