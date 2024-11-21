@@ -5,7 +5,7 @@ header {
 }
 
 header > #section-header-centro {
-    padding-top: 4px;
+    padding-top: 5px;
 }
 
 header > #section-header-centro > nav > #imagem-nav {
@@ -14,8 +14,8 @@ header > #section-header-centro > nav > #imagem-nav {
 }
 
 header > #section-header-centro > nav > #imagem-nav > img {
-    height: 40px;
-    width: 40px;
+    height: 37px;
+    width: 37px;
 
 }
 
@@ -33,4 +33,24 @@ header section#login-cadastro > a {
     font-size: .7em;
     margin: 0px 10px 0px 0px;
 
+}
+
+#painel-streamer > iframe {
+    padding-top: 80px;
+}
+
+#painel-selecao-stream {
+    width: 310px;
+    height: 60px;
+    top: -35px;
+}
+
+#center-selecao-stream {
+    top: 1px;
+}
+
+#painel-selecao-stream  img{
+    padding: 10px 8px 10px 8px;
+    width: 40px;
+    height: 40px;
 }
