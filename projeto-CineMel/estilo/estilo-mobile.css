@@ -55,8 +55,12 @@ header section#login-cadastro > a {
     height: 40px;
 }
 
+footer {
+    height: 140px;
+}
+
 footer h1 {
-    padding: 40px 0px 0px 10px;
+    padding: 20px 0px 0px 10px;
 }
 
 footer p{
@@ -64,19 +68,17 @@ footer p{
 }
 
 #sobre-cinemel {
-    margin-left: 15px;
-    font-size: 0.7em;
-    width: 500px;
-    height: 2px;
+    margin-left: 4px;
+    font-size: 0.5em;
 }
 
 #sobre-cinemel p {
-    width: 200px;
+    width: 150px;
     text-align: justify;
 }
 
 #contatos {
-    margin-right: -140px;
+    margin-right: -220px;
     float: right;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
