@@ -153,11 +153,6 @@ article#inicio-generos > #iframe-genero {
     margin: auto;
 }
 
-
-.genero {
-    margin-bottom: 50px;
-}
-
 .genero h1 {
     font-family: var(--fonte-titulo);
     font-size: 3em;
