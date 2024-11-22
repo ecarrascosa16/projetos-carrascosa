@@ -146,6 +146,14 @@ a#cadastro:hover {
     margin: auto;
 }
 
+article#inicio-generos > #iframe-acao {
+    display: block;
+    height: 440px;
+    width: 92vw;
+    margin: auto;
+}
+
+
 .genero {
     margin-bottom: 50px;
 }
@@ -164,7 +172,7 @@ a#cadastro:hover {
     height: 323px;
     margin: 10px;
     box-shadow: 10px 10px 0px var(--cor04);
-    transition: 0.3s;
+    transition: 0.4s;
     border: 2px solid rgba(0, 0, 0, 0);
 
 }
@@ -172,7 +180,7 @@ a#cadastro:hover {
 .genero img:hover {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
     border: 2px solid white;
-    transform: scale(1.09);
+    transform: scale(1.05);
     
 }
 
