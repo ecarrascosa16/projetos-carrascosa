@@ -56,8 +56,12 @@ header section#login-cadastro > a {
 }
 
 article#inicio-generos > #iframe-genero {
-    height: 300px;
+    height: auto;
 }
+
+#iframe-genero {
+    -webkit-overflow-scrolling: touch; /* Suaviza a rolagem no iOS */
+  }
 
 
 /* Tamanho dos iframes das categorias Mobile */

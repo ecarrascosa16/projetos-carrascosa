@@ -31,8 +31,6 @@ body {
 }
 
 header {
-    z-index: 1000;
-    position: fixed;
     background-color: var(--cor01);
     height: 100px;
     width: 100vw;
@@ -113,7 +111,6 @@ a#cadastro:hover {
 }
 
 #painel-streamer > iframe {
-    padding-top: 100px;
     margin: auto;
     display: block;
     height: 78vh;
