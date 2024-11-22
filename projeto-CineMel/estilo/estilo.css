@@ -146,9 +146,9 @@ a#cadastro:hover {
     margin: auto;
 }
 
-article#inicio-generos > #iframe-acao {
+article#inicio-generos > #iframe-genero {
     display: block;
-    height: 440px;
+    height: 450px;
     width: 92vw;
     margin: auto;
 }
@@ -163,14 +163,14 @@ article#inicio-generos > #iframe-acao {
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 10px;
-    margin: 0px 0px 5px 82px;
+    margin: 0px 0px 5px 15px;
     
 }
 
 .genero img {
     width: 207px;
     height: 323px;
-    margin: 10px;
+    margin: 6px 10px 10px 10px;
     box-shadow: 10px 10px 0px var(--cor04);
     transition: 0.4s;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -180,7 +180,7 @@ article#inicio-generos > #iframe-acao {
 .genero img:hover {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
     border: 2px solid white;
-    transform: scale(1.05);
+    transform: scale(1.03);
     
 }
 

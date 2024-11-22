@@ -1,23 +1,12 @@
 @charset "UTF-8";
 
-:root {
-    --cor01: #020873;
-    --cor02: #0424D9;
-    --cor03: #0439D9;
-    --cor04: #2793F2;
-    --cor05: #D9A648;
-
-    --fonte-nav: 'Poppins';
-    --fonte-titulo: 'Montserrat';
-}
-
-
 * {
     overflow-y: hidden;
 }
 
 div {
     white-space: nowrap;
+
     
 }
 
@@ -29,9 +18,9 @@ div::-webkit-scrollbar {
 div::-webkit-scrollbar-track {
     border-radius: 5px;
     background-color: #020873;
-    height: 1px;
 }
 
 div::-webkit-scrollbar-thumb {
+    border-radius: 5px;
     background-color: #000ace;
 }

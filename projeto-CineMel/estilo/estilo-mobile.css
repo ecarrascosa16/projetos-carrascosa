@@ -55,6 +55,18 @@ header section#login-cadastro > a {
     height: 40px;
 }
 
+article#inicio-generos > #iframe-genero {
+    height: 300px;
+}
+
+
+/* Tamanho dos iframes das categorias Mobile */
+section.genero img {
+    width: 127px;
+    height: 193px;
+}
+/* -----------------------------------------*/
+
 footer {
     height: 140px;
 }
