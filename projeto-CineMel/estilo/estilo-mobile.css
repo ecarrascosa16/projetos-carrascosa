@@ -35,10 +35,6 @@ header section#login-cadastro > a {
 
 }
 
-#painel-streamer > iframe {
-    padding-top: 80px;
-}
-
 #painel-selecao-stream {
     width: 310px;
     height: 60px;
@@ -56,12 +52,8 @@ header section#login-cadastro > a {
 }
 
 article#inicio-generos > #iframe-genero {
-    height: auto;
+    margin-top: -110px;
 }
-
-#iframe-genero {
-    -webkit-overflow-scrolling: touch; /* Suaviza a rolagem no iOS */
-  }
 
 
 /* Tamanho dos iframes das categorias Mobile */
