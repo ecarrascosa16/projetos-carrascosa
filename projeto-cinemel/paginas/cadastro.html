@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <link rel="stylesheet" href="../estilo/estilo-mobile.css">
+    <style> 
+
+        main > section#painel-login {
+            height: 550px;
+        }
+
+
+        section#painel-login > form > p {
+            margin: 15px 0px 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="painel-login">
+            <h1>Cadastro</h1>
+
+            <form action="#" autocomplete="on" method="get">
+                <p>
+                    <label for="iusu">Usuário:</label> <br>
+                    <input type="text" name="usu" id="iusu" size="25" placeholder=" Nome de usuário" required >
+                </p>
+
+                <p>
+                    <label for="iemail">E-mail: </label> <br>
+                        <input type="email" name="email" id="iemail" size="25" placeholder="E-mail">
+
+                </p>
+
+                <p>
+                    <label for="isen">Senha:</label> <br>
+                    <input type="password" name="sen" id="isen" minlength="6" maxlength="20" size="25" placeholder="  Senha" required>
+                </p>
+
+                <p>
+                    <label for="isen">Repita a senha:</label> <br>
+                    <input type="password" name="sen" id="isen" minlength="6" maxlength="20" size="25" placeholder="  Senha" required>
+                </p>
+
+                <section id="links-login">
+                    <img src="../imagens/login/google.png" alt="Logo Google">
+                    <img src="../imagens/login/facebook.png" alt="Logo Facebook">
+                    <img src="../imagens/login/iphone.png" alt="Logo Iphone">
+                </section>
+
+                <p>
+                    <input id="botao-login" type="submit" value="LOGIN">
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
