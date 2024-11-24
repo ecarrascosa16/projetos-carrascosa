@@ -215,3 +215,73 @@ footer p{
 #contatos a:hover {
     color: #82c5ff;
 }
+
+
+/* PÁGINA LOGIN */
+
+main > section#painel-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    height: 500px;
+    width: 260px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.400);
+    
+}
+
+main > section#painel-login > h1 {
+
+    text-align: center;
+
+    padding: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+}
+
+section#painel-login > section#links-login {
+    text-align: center;
+}
+
+section#painel-login > section#links-login > img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 8px 16px 8px 16px;
+}
+
+section#painel-login > section#links-login > img:hover {
+    background-color: #dbeeff;
+}
+
+section#painel-login > form > p {
+    font-weight: bolder;
+    text-align: left;
+    margin: 40px 0px 40px 20px;
+}
+
+section#painel-login > form > p > input  {
+    margin-top: 10px;
+    height: 30px;
+}
+
+section#painel-login > form > p > input#botao-login {
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    width: 220px;
+    color: white;
+    border: 0px;
+    background-color: var(--cor04);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.300);
+}
+
+section#painel-login > form > p > input#botao-login:hover {
+    border: 1px solid black;
+    background-color: #3f9cee;
+}
