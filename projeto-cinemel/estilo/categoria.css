@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #020873;
+    --cor02: #0424D9;
+    --cor03: #0439D9;
+    --cor04: #2793F2;
+    --cor05: #D9A648;
+
+    --fonte-nav: 'Poppins';
+    --fonte-titulo: 'Montserrat';
+}
+
+main > h1 {
+    margin: 30px 0px 30px 0px;
+    font-family: var(--fonte-titulo);
+    font-size: 4.5em;
+    text-align: center;
+}
+
+main > section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 130px;
+}
+
+main > section > a {
+    background-color: var(--cor04);
+    width: 20%;
+    min-width: 300px;
+    max-width: 300px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    text-decoration: none;
+    color: white;
+}
+
+main > section > a > div {
+    background: url;
+    height: 200px;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#comedia-b {
+    background: url(../imagens/categoria/gente-grande.jpg) no-repeat  center;
+}#acao-b {
+    background: url(../imagens/categoria/velozes.jpg) no-repeat bottom;
+    background-size: cover;
+}#suspense-b {
+    background: url(../imagens/categoria/suspense.jpeg) no-repeat center;
+    background-size: cover;
+}#animacao-b {
+    background: url(../imagens/categoria/hotel-trans.jpeg) no-repeat center;
+    background-size: cover;
+}#ficcao-b {
+    background: url(../imagens/categoria/star-wars.png) no-repeat;
+    background-size: cover;
+}#fantasia-b {
+    background: url(../imagens/categoria/alice.jpeg) no-repeat center;
+    background-size: cover;
+}#drama-b {
+    background: url(../imagens/categoria/barraca.jpeg) no-repeat bottom;
+    background-size: cover;
+}#terror-b {
+    background: url(../imagens/categoria/terror.jpg) no-repeat bottom;
+    background-size: cover;
+}
+
+main > section > a > h1 {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+}
+
+main > section > a > p {
+    font-family: var(--fonte-titulo);
+    padding: 0px 15px 0px 15px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+#botao-mais {
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: 200px;
+    background-color: var(--cor04);
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.274);
+    border-radius: 3px;
+    border: none;
+    margin-top: 5%;
+}
+
+#botao-mais:hover {
+    background-color: #46a8fd;
+}
