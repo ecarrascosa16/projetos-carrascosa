@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../estilo/estilo.css">
-    <link rel="stylesheet" href="../estilo/estilo-mobile.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo-mobile.css">
+    <link rel="shortcut icon" href="../imagens/faicon.ico" type="image/x-icon">
     <style> 
 
         main > section#painel-login {
@@ -31,8 +32,8 @@
 
             <form action="#" autocomplete="on" method="get">
                 <p>
-                    <label for="iusu">Usuário:</label> <br>
-                    <input type="text" name="usu" id="iusu" size="25" placeholder=" Nome de usuário" required >
+                    <label for="iusuario">Usuário:</label> <br>
+                    <input type="text" name="usuario" id="iusuario" size="25" placeholder=" Nome de usuário" required >
                 </p>
 
                 <p>
@@ -47,9 +48,11 @@
                 </p>
 
                 <p>
-                    <label for="isen">Repita a senha:</label> <br>
-                    <input type="password" name="sen" id="isen" minlength="6" maxlength="20" size="25" placeholder="  Senha" required>
+                    <label for="irepitasen">Repita a senha:</label> <br>
+                    <input type="password" name="repitasen" id="irepitasen" minlength="6" maxlength="20" size="25" placeholder="  Senha" required>
                 </p>
+
+               
 
                 <section id="links-login">
                     <img src="../imagens/login/google.png" alt="Logo Google">
@@ -58,10 +61,11 @@
                 </section>
 
                 <p>
-                    <input id="botao-login" type="submit" value="Cadastro">
+                    <input onclick="cadastrar()" id="botaologin" type="button" value="Cadastro">
                 </p>
             </form>
         </section>
     </main>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>

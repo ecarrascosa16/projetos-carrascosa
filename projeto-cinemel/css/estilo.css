@@ -114,10 +114,6 @@ a#cadastro:hover {
 
 }
 
-#painel-streamer {
-    height: 100vh;
-}
-
 #painel-streamer > iframe {
     margin: auto;
     display: block;
@@ -151,12 +147,29 @@ a#cadastro:hover {
     margin: auto;
 }
 
+#seccao-boasvindas {
+    text-align: center;
+    margin: 10px 470px 40px 470px;
+}
+
+#seccao-boasvindas > h1 {
+    font-size: 4em;
+    font-family: var(--fonte-titulo);
+}
+
+#seccao-boasvindas > p {
+    font-size: 1.3em;
+
+}
+
+
 article#inicio-generos > #iframe-genero {
     display: block;
     height: 450px;
     width: 92vw;
     margin: auto;
 }
+
 
 .genero h1 {
     font-family: var(--fonte-titulo);
