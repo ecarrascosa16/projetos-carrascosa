@@ -17,3 +17,13 @@ function carregarNome() {
 if (document.getElementById("nomeusuario")) {
     carregarNome();
 }
+
+let mostrandologin = document.getElementById('seccao-login')
+
+function mostrarLogin() {
+    mostrandologin.style.display = 'block'
+}
+
+function fecharLogin() {
+    mostrandologin.style.display = 'none'
+}

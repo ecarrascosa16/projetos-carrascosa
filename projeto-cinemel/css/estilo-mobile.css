@@ -94,7 +94,7 @@ footer > #sobre-cinemel {
 
 /* PÁGINA LOGIN */
 
-main #voltar-principal a {
+#seccao-login #voltar-principal a {
     position: absolute;
     top: 14%;
     left: 12%;
@@ -103,7 +103,7 @@ main #voltar-principal a {
     text-decoration: none;
 }
 
-main > #voltar-principal > a > p {
+#seccao-login > #voltar-principal > a > p {
     position: absolute;
     top: 130%;
     left: 35%;
@@ -111,7 +111,7 @@ main > #voltar-principal > a > p {
     font-size: 0.7em;
 }
 
-main > section#painel-login {
+#seccao-login > section#painel-login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -125,7 +125,7 @@ main > section#painel-login {
     
 }
 
-main > section#painel-login > h1 {
+#seccao-login > section#painel-login > h1 {
 
     text-align: center;
 
