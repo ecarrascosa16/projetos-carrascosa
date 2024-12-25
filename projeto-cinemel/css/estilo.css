@@ -172,7 +172,7 @@ a#cadastro:hover {
 
 #painel-login > #painel-login-logar > i, #painel-cadastro > #painel-cadastro-cadastrar > i {
     float: right;
-    margin: 20px;
+    margin: 10px 10px 0px 0px;
     font-size: 1.8em;
     cursor: pointer;
 }
