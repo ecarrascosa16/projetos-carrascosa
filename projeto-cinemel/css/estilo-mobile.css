@@ -94,92 +94,48 @@ footer > #sobre-cinemel {
 
 /* PÁGINA LOGIN */
 
-main #voltar-principal a {
-    position: absolute;
-    top: 14%;
-    left: 12%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-decoration: none;
+#painel-login-fundo,  #painel-cadastro-fundo{
+    height: 2235px;
+    width: 100%;
+    backdrop-filter: blur(13px);
+
 }
 
-main > #voltar-principal > a > p {
-    position: absolute;
-    top: 130%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    font-size: 0.7em;
+#painel-login-fundo > #painel-login {
+    display: flex;
+    height: 420px;
+    width: 350px;
+    margin-top: 80px;
 }
 
-main > section#painel-login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    background-color: white;
-    height: 500px;
-    width: 260px;
-    border-radius: 8px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.400);
-    
+#painel-cadastro-fundo > #painel-cadastro {
+    display: flex;
+    height: 560px;
+    width: 350px;
+    margin-top: 12px;
 }
 
-main > section#painel-login > h1 {
+#painel-login > #painel-login-imagem, #painel-cadastro > #painel-cadastro-imagem {
+    display: none;
 
-    text-align: center;
-
-    padding: 20px;
-    font-family: var(--fonte-titulo);
-    font-size: 2em;
 }
 
-section#links-login {
-    text-align: center;
-}
-
-section#links-login > img {
-    height: 30px;
-    width: 30px;
-    border: 1px solid black;
+#painel-login > #painel-login-logar, #painel-cadastro > #painel-cadastro-cadastrar {
     border-radius: 10px;
-    margin: 5px;
-    padding: 8px 16px 8px 16px;
 }
 
-section#links-login > img:hover {
-    background-color: #dbeeff;
+#painel-login > #painel-login-logar > h1, #painel-cadastro > #painel-cadastro-cadastrar > h1 {
+    margin: 30px 0px 10px 55px;
 }
 
-section#painel-login > form > p {
-    font-weight: bolder;
-    text-align: left;
-    margin: 40px 0px 40px 20px;
+#painel-login > #painel-login-logar > #links-login > img, #painel-cadastro-cadastrar  > form > #links-cadastro > img{
+    padding: 8px 25px 8px 25px;
 }
 
-section#painel-login > form > p > input  {
-    margin-top: 10px;
-    height: 30px;
+#painel-login > #painel-login-logar > form > p, #painel-cadastro-cadastrar > form > p {
+    margin: 20px auto 20px auto;
+    width: 290px;
 }
-
-section#painel-login > form > p > input#botaologin {
-    text-align: center;
-    margin: auto;
-    height: 50px;
-    width: 220px;
-    color: white;
-    border: 0px;
-    background-color: var(--cor04);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.300);
-}
-
-section#painel-login > form > p > input#botaologin:hover {
-    border: 1px solid black;
-    background-color: #3f9cee;
-}
-
-
-
 
 /*------------------------- PAGINA DE CATEGORIAS -------------------------*/
 

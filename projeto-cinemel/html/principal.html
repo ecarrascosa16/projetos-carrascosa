@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineMel</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/estilo-mobile.css" media="(max-width: 768px)">
     <link rel="shortcut icon" href="../imagens/faicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-    
         <section id="section-header-centro">
-    
             <nav>
                 <div id="imagem-nav">
                     <img src="../imagens/logo-cinemel.png" alt="Logo Cinemel">
@@ -22,16 +21,88 @@
                     <a href="categoria.html">Categorias</a>
                     <a href="#">Sport</a>
                 </div>
-    
             </nav>
-    
         </section>
         <section id="login-cadastro">
-            <a href="login.html" id="login" target="_self">Login</a>
-            <a href="cadastro.html" id="cadastro" target="_self">Cadastro</a>
+            <a href="#" id="login" onclick="mostrarLogin()">Login</a>
+            <a href="#" id="cadastro" onclick="mostrarCadastro()">Cadastro</a>
         </section>
     </header>
     <main>
+        <section id="painel-login-fundo">
+            <div id="painel-login">
+                <div id="painel-login-imagem">
+
+                </div>
+                <div id="painel-login-logar">
+                    <i class="material-icons" onclick="fecharLogin()">cancel</i>
+                    <h1>Login</h1>
+                    <section id="links-login">
+                        <img src="../imagens/login/google.png" alt="Logo Google">
+                        <img src="../imagens/login/facebook.png" alt="Logo Facebook">
+                        <img src="../imagens/login/iphone.png" alt="Logo Iphone">
+                    </section>
+                    <form action="#" autocomplete="on" method="get">
+                        <p>
+                            <label for="iemail"><i class="material-icons">alternate_email</i></label>
+                            <input type="email" name="email" id="iemail" size="25" placeholder="   E-mail" required >
+                        </p>
+                        <p>
+                            <label for="isen"><i class="material-icons">lock</i></label>
+                            <input type="password" name="sen" id="isen" minlength="6" maxlength="20" size="25" placeholder="   Senha" required>
+                        </p>
+                        <p>
+                            <input id="botaologin" type="submit" value="Login">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="painel-cadastro-fundo">
+            <div id="painel-cadastro">
+                <div id="painel-cadastro-imagem">
+
+                </div>
+                <div id="painel-cadastro-cadastrar">
+                    <i class="material-icons" onclick="fecharCadastro()">cancel</i>
+                    <h1>Cadastro</h1>
+                    <form action="#" autocomplete="on" method="get">
+                        <p>
+                            <label for="iusuario"><i class="material-icons">person</i></label>
+                            <input type="text" name="usuario" id="iusuario" size="25" placeholder="   Nome de usuário" required >
+                        </p>
+        
+                        <p>
+                            <label for="iemail"><i class="material-icons">alternate_email</i></label>
+                                <input type="email" name="email" id="iemail" size="25" placeholder="   E-mail">
+        
+                        </p>
+        
+                        <p>
+                            <label for="isen"><i class="material-icons">lock</i></label>
+                            <input type="password" name="sen" id="isen" minlength="6" maxlength="20" size="25" placeholder="   Senha" required>
+                        </p>
+        
+                        <p>
+                            <label for="irepitasen"><i class="material-icons">lock_reset</i></label>
+                            <input type="password" name="repitasen" id="irepitasen" minlength="6" maxlength="20" size="25" placeholder="   Repita a senha" required>
+                        </p>
+        
+                       
+        
+                        <section id="links-cadastro">
+                            <img src="../imagens/login/google.png" alt="Logo Google">
+                            <img src="../imagens/login/facebook.png" alt="Logo Facebook">
+                            <img src="../imagens/login/iphone.png" alt="Logo Iphone">
+                        </section>
+        
+                        <p>
+                            <input onclick="cadastrar()" id="botaocadastro" type="button" value="Cadastro">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
         <section id="painel-streamer">
             <iframe src="iframe/confira.html" frameborder="0" name="frame"></iframe>
             <section id="painel-selecao-stream">
