@@ -283,6 +283,8 @@ a#cadastro:hover {
     
 }
 
+/*-----BOAS VINDAS-----*/
+
 #seccao-boasvindas {
     text-align: center;
     margin: auto;
@@ -299,6 +301,7 @@ a#cadastro:hover {
     max-width: 800px;
 }
 
+/*------------Iframe dos filmes------------*/
 
 article#inicio-generos > #iframe-genero {
     display: block;
@@ -357,3 +360,40 @@ footer > #sobre-cinemel {
 #contatos a:hover {
     color: #82c5ff;
 }
+
+
+/*------------------------- PAGINA DE ESPORTES -------------------------*/
+ 
+#desktop-seccao-cards1 {
+    display: flex;
+}
+
+#desktop-seccao-cards2 {
+    display: none;
+}
+
+#seccao-cards1 {
+    display: flex;
+}
+#seccao-cards2 {
+    display: flex;
+}
+#seccao-cards3 {
+    display: flex;
+}
+#seccao-cards4 {
+    display: flex;
+}
+#seccao-cards5 {
+    display: flex;
+}
+
+#back-step1, #back-step2, #back-step3, #back-step4, #back-step5, #next-step1, #next-step2, #next-step3, #next-step4, #next-step5 {
+    display: none;
+    background-size: cover;
+    height: 150px;
+    width: 30px;
+}
+
+
+ 
