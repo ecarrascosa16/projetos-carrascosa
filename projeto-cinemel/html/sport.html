@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/sport.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/estilo-mobile.css" media="(max-width: 768px)">
@@ -106,148 +107,33 @@
     <main id="main-sports">
         <h1>Seu Portal para os Melhores Jogos</h1>
         <p>Explore a paixão, energia e conquistas que só o esporte pode oferecer. <br>aqui, celebramos histórias, curiosidades e tudo que inspira movimento e superação.</p>
-        <section id="selecao-esportes">
-            <div id="back-step" onclick="voltarPagina()"></div>
-            <div id="back-step1" onclick="voltarPagina1()"></div>
-            <div id="back-step2" onclick="voltarPagina2()"></div>
-            <div id="back-step3" onclick="voltarPagina3()"></div>
-            <div id="back-step4" onclick="voltarPagina4()"></div>
-            <div id="back-step5" onclick="voltarPagina5()"></div>
-                <div id="desktop-seccao-cards1">
-                    <div id="seccao-cards1">
-                        <div class="card">
-                            <div class="imagem-esporte" >
-                                <img src="../imagens/sports/1.png">
-                            </div>
-                            <h1>Futebol</h1>
-                        </div>
-                    
-                        <div class="card">
-                            <div class="imagem-esporte">
-                                <img src="../imagens/sports/5.png">
-                            </div>
-                            <h1>Golf</h1>
-                        </div>
-                        <div class="card">
-                            <div class="imagem-esporte">
-                                <img src="../imagens/sports/3.png">
-                            </div>
-                            <h1>Volêi</h1>
-                        </div>
-                    </div>
-                    <div id="seccao-cards2">
-                        <div class="card">
-                            <div class="imagem-esporte">
-                                <img src="../imagens/sports/4.png">
-                            </div>
-                            <h1>Tênis</h1>
-                        </div>
-                        <div class="card">
-                            <div class="imagem-esporte">
-                                <img src="../imagens/sports/2.png">
-                            </div>
-                            <h1>Basquetebol</h1>
-                        </div>
-                        <div class="card">
-                            <div class="imagem-esporte">
-                                <img src="../imagens/sports/6.png">
-                            </div>
-                            <h1>Futebol Americano</h1>
-                        </div>
-                    </div>
-                    <div id="seccao-cards3">
-                        <div class="card">
-                            <div class="imagem-esporte">
-                                <img src="../imagens/sports/7.png">
-                            </div>
-                            <h1>Boxe</h1>
-                        </div>         
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/9.png">
-                        </div>
-                        <h1>Tênis de mesa</h1>
-                    </div>
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/8.png">
-                        </div>
-                        <h1>Fórmula 1</h1>
-                    </div>
-                                </div>
-                </div> 
-                <div id="desktop-seccao-cards2">   
-                <div id="seccao-cards4">
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/10.png">
-                        </div>
-                        <h1>Skate</h1>
-                    </div>
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/11.png">
-                        </div>
-                        <h1>Ciclismo</h1>
-                    </div>
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/12.png">
-                        </div>
-                        <h1>Atletismo</h1>
-                    </div>
-                                </div>
-                <div id="seccao-cards5">
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/13.png">
-                        </div>
-                        <h1>Beisebol</h1>
-                    </div>
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/14.png">
-                        </div>
-                        <h1>Hockey</h1>
-                    </div>
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            <img src="../imagens/sports/15.png">
-                        </div>
-                        <h1>Badminton</h1>
-                    </div>
-                </div>
-                <div id="seccao-cards5">
-                        
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            
-                        </div>
-                        <h1></h1>
-                    </div>
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            
-                        </div>
-                        <h1></h1>
-                    </div>
-                    <div class="card">
-                        <div class="imagem-esporte">
-                            
-                        </div>
-                        <h1></h1>
-                    </div>
-                </div>
-                                
-                </div>
-            <div id="next-step" onclick="avancarPagina()"></div>
-            <div id="next-step1" onclick="avancarPagina1()"></div>
-            <div id="next-step2" onclick="avancarPagina2()"></div>
-            <div id="next-step3" onclick="avancarPagina3()"></div>
-            <div id="next-step4" onclick="avancarPagina4()"></div>
-            <div id="next-step5" onclick="avancarPagina5()"></div>
-        </section>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><img src="../imagens/sports/1.png" alt=""><p>Futebol</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/2.png" alt=""><p>Basquete</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/3.png" alt=""><p>Voleibol</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/4.png" alt=""><p>Tênis</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/5.png" alt=""><p>Golf</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/6.png" alt=""><p>Futebol Americano</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/7.png" alt=""><p>Boxe</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/8.png" alt=""><p>Fórmula 1</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/9.png" alt=""><p>Tênis de mesa</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/10.png" alt=""><p>Skate</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/11.png" alt=""><p>Ciclismo</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/12.png" alt=""><p>Atletismo</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/13.png" alt=""><p>Beisebol</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/14.png" alt=""><p>Hockey no gelo</p></div>
+            <div class="swiper-slide"><img src="../imagens/sports/15.png" alt=""><p>Badminton</p></div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../javascript/script.js"></script>
 </body>
 </html>

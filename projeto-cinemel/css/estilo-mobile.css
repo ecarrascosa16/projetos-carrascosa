@@ -156,67 +156,22 @@ main > #categorias-titulo {
 }
 
 #main-sports > p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 350px;
     margin-left: 20px;
+    margin-bottom: 0px;
 }
 
 
-#back-step1, #next-step1 {
-    display: block;
-    background-size: cover;
-    height: 150px;
-    width: 30px;
-}
+/* <!---------- BIBLIOTECA SWIPER ----------/> */
 
-#back-step, #back-step2, #back-step3, #back-step4, #back-step5, #next-step, #next-step2, #next-step3, #next-step4, #next-step5 {
-    display: none;
-    background-size: cover;
-    height: 150px;
-    width: 30px;
-}
 
-#selecao-esportes .card {
-    width: 90px;
-    height: 150px;
-    border-radius: 5px;
-    margin: 40px 7px 50px 7px;
-}
-
-#selecao-esportes .imagem-esporte{
-    height: 70px;
-    width: 70px;
-    margin: 20px auto 15px auto;
-    
-}
-
-#selecao-esportes img {
+.swiper-slide > img {
     border-radius: 100%;
     height: 70px;
-    width: 70px;
 }
 
-#selecao-esportes h1{
-    text-align: center;
-    font-size: 1em;
-    padding: 0px 5px 10px 5px;
-}
-
-
-
-#seccao-cards1 {
-    display: flex;
-}
-#seccao-cards2 {
+.swiper-button-prev, .swiper-button-next {
     display: none;
 }
-#seccao-cards3 {
-    display: none;
-}
-#seccao-cards4 {
-    display: none;
-}
-#seccao-cards5 {
-    display: none;
-}
-
+        
