@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="titulo">
+        <h1>To Do</h1>
+        <p>LIST</p>
+    </section>
+    <main>
+        <h1>Escreva suas Tarefas</h1>
+        <form action="#" method="get">
+            <div id="painel-tarefa">
+                <p>
+                    <label for="text">Tarefa:</label>
+                    <input type="text" name="text" id="text-tarefa" required>
+                </p>
+                <div id="painel-horario">
+                    <p>
+                        <label for="date">Quando:</label>
+                        <input type="date" name="date" id="data-tarefa" min="2025-01-15" max="4000-01-01" required>
+                    </p>
+                    <p>
+                        <label for="date">Quando:</label>
+                        <input type="time" name="date" id="horario-tarefa" required>
+                    </p>
+                </div>
+            </div>
+            <p>
+                <button id="submit-adicionar" onclick="adicionarTarefa()">Adicionar</button>
+            </p>
+        </form>
+        <ul id="lista">
+        </ul>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

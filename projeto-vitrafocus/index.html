@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/global.css">
+    <title>VitraFocus</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo_vetrafocus.png" alt="Logo VetraFocus">
+        <nav>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">home</span>
+                <a href="">Inicio</a>
+            </div>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">person</span>
+                <a href="">Perfil</a>
+            </div> 
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">hourglass</span>
+                <a href="">Pomodoro</a>
+            </div> 
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">trophy
+                </span>
+                <a href="">Recompensas</a>
+            </div>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">bar_chart_4_bars</span>
+                <a href="">Estatísticas</a>
+            </div>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">settings</span>
+                <a href="">Configurações </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="section_apresentacao">
+            <h1>Olá, Nome Sobrenome!</h1>
+            <p>O VitraFocus combina a poderosa técnica Pomodoro com um sistema de gamificação envolvente para transformar sua produtividade. Conclua ciclos de foco, ganhe recompensas e acompanhe seu progresso de forma intuitiva.</p>
+        </section>
+        <div id="linha">
+            <section id="section_vantagensVF">
+                <ul>
+                    <li>Torne suas tarefas mais envolventes.</li>
+                    <li>Mantenha o ritmo com estatísticas inteligentes.</li>
+                    <li>Personalize sua experiência e alcance mais resultados.</li>
+                </ul>
+                <button id="buttonCTA">Comece agora</button>
+            </section>
+            <section id="section_pomodorosDay">
+                <div id="section_data_estatisticas">
+                    <h1>DIA &nbsp;</h1>
+                    <p id="dataDeHoje"></p>
+                </div>
+
+                <div id="section_estatisticas">
+                    <div class="resumo_estatisticas">
+                        <h2>Pomodoros</h2>
+                        <h3>0</h3>
+                    </div>
+                    <div class="resumo_estatisticas">
+                        <h2>Tarefas</h2>
+                        <h3>0</h3>
+                    </div>
+                    <div class="resumo_estatisticas">
+                        <h2>Focus</h2>
+                        <h3>0</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
