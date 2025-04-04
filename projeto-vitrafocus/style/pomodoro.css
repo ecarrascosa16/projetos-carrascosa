@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor_1: #E63946;
+    --cor_2: #FF8C42;
+    --cor_3: #57A773;
+    --cor_4: #F5F5F5;
+    --cor_5: #2f3642;
+    --cor_6: #2d343f;
+    --cor_7: #222831;
+    
+
+    --font_1: Arial, Helvetica, sans-serif;;
+    --font_titulos: "Montserrat", serif;
+    --font_paragrafo: "Roboto", serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#cronograma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column; 
+    height: 300px;
+    width: 600px;
+    background-color: var(--cor_5);
+}
+
+#cronograma > #contador {
+    font-family: var(--font_paragrafo);
+    font-size: 7em;
+    text-align: center;
+    color: white;
+}
+
+#cronograma > #controles > button {
+    margin: 15px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: white;
+}
+
+button#iniciar {
+    background-color: rgb(33, 100, 33);
+}
+
+button#pausar {
+    background-color: rgb(150, 150, 28);
+}
+
+button#parar {
+    background-color: rgb(151, 28, 28);
+}   
+
+button#iniciar:hover {
+    background-color: rgb(37, 116, 37);
+}
+
+button#pausar:hover {
+    background-color: rgb(163, 163, 31);
+}
+
+button#parar:hover {
+    background-color: rgb(175, 30, 30);
+} 

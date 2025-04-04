@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/pomodoro.css">
+    <title>VitraFocus</title>
+</head>
+<body>
+    <header>
+        <img src="../images/logo_vetrafocus.png" alt="Logo VetraFocus">
+        <nav>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">home</span>
+                <a href="">Inicio</a>
+            </div>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">person</span>
+                <a href="">Perfil</a>
+            </div> 
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">hourglass</span>
+                <a href="pages/pomodoro.html">Pomodoro</a>
+            </div> 
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">trophy
+                </span>
+                <a href="">Recompensas</a>
+            </div>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">bar_chart_4_bars</span>
+                <a href="">Estatísticas</a>
+            </div>
+            <div id="option_navegation">
+                <i  class="barra_lateral_menu"></i>
+                <span class="material-symbols-outlined">settings</span>
+                <a href="">Configurações </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="cronograma">
+            <h1 id="contador">00:00:00</h1>
+            <div id="controles">
+                <button onclick="start()" id="iniciar">Iniciar</button>
+                <button onclick="pause()" id="pausar">Pausar</button>
+                <button onclick="parar()" id="parar">Parar</button>
+            </div>
+        </section>
+    </main>
+    <script src="../javascript/script_cron.js"></script>
+</body>
+</html>
