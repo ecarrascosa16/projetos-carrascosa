@@ -6,8 +6,8 @@
     <link rel="shortcut icon" href="public/images/Black and Cream Beauty and Fashion Logo (500 x 300 px).png" type="image/x-icon">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/swiper.css">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     
     <title>Lumina Beauty</title>
 </head>
@@ -16,8 +16,8 @@
         <a href="#"><img src="public/images/logo-lumina.png" alt="Logo Lumina"></a>
         <nav>
             <a href="#sobre-nos">Sobre Nós</a>
-            <a href="#">Serviços</a>
-            <a href="#">Loja</a>
+            <a href="#nossos-servicos">Serviços</a>
+            <a href="#loja">Loja</a>
             <a href="#">Contato</a>
         </nav>
         <section id="login">
@@ -25,18 +25,21 @@
         </section>
     </header>
     <main>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="public/images/3.png" alt="salão por fora"></div>
-              <div class="swiper-slide"><img src="public/images/5.png" alt="Oque o salão oferece"></div>
-              <div class="swiper-slide"><img src="public/images/4.png" alt="salão por fora"></div>
-              <div class="swiper-slide"><img src="public/images/1.png" alt=""></div>
-              <div class="swiper-slide"><img src="public/images/2.png" alt=""></div>
+        <section id="imagens-central">
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" centered-slides="true" autoplay-delay="2800" autoplay-disable-on-interaction="false">
+                <swiper-slide><img src="public/images/home/3.png" alt="salão por fora"></swiper-slide>
+                <swiper-slide><img src="public/images/home/5.png" alt="Oque o salão oferece"></swiper-slide>
+                <swiper-slide><img src="public/images/home/4.png" alt="salão por fora"></swiper-slide>
+                <swiper-slide><img src="public/images/home/1.png" alt=""></swiper-slide>
+                <swiper-slide><img src="public/images/home/2.png" alt=""></swiper-slide>
+            <div class="autoplay-progress" slot="container-end">
+            <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
+            </swiper-container>
+        </section>
           <section id="agendar">
             <a href="#">AGENDE SEU HORÁRIO</a>
           </section>
@@ -64,51 +67,153 @@
             <div id="servicos">
                 <article>
                     <h1>Corte</h1>
-                    <img src="public/images/corte-cabelo.jpg" alt="">
+                    <img src="public/images/home/corte-cabelo.jpg" alt="">
                     <p>A partir de R$ 79,90</p>
                     <a href="#">Agendar agora</a>
                 </article>
                 <article>
                     <h1>Limpeza de Pele</h1>
-                    <img src="public/images/limpeza-de-pele.jpeg" alt="">
+                    <img src="public/images/home/limpeza-de-pele.jpeg" alt="">
                     <p>R$ 99,90  <spam>R$ 129,90</spam></p>
                     <a href="#">Agendar agora</a>
                 </article>
                 <article>
                     <h1>Manicure & Pedicure</h1>
-                    <img src="public/images/manicure.png" alt="">
+                    <img src="public/images/home/manicure.png" alt="">
                     <p>R$ 39,90</p>
                     <a href="#">Agendar agora</a>
                 </article>
                 <article>
                     <h1>Sobrancelhas</h1>
-                    <img src="public/images/sombrancelha.jpeg" alt="">
+                    <img src="public/images/home/sombrancelha.jpeg" alt="">
                     <p>A partir de R$ 29,90</p>
                     <a href="#">Agendar agora</a> 
                 </article>
                 <article>
                     <h1>Depilação Egípcia</h1>
-                    <img src="public/images/depilação.png" alt="">
+                    <img src="public/images/home/depilação.png" alt="">
                     <p>A partir de R$ 49,90</p>
                     <a href="#">Agendar agora</a>
                 </article>
                 <article>
                     <h1>Escova Modeladora</h1>
-                    <div class="img-servicos"></div>
+                    <img src="public/images/home/escova-modeladora.jpeg" alt="">
                     <p>R$ 59,90  <spam>R$ 79,90</spam></p>
+                    <a href="#">Agendar agora</a>
+                </article>       
+                <article>
+                    <h1>Spa Capilar</h1>
+                    <img src="public/images/home/spa-capilar.jpeg" alt="">
+                    <p>A partir de R$ 119,90</p>
                     <a href="#">Agendar agora</a>
                 </article>
                 <article>
-                    <h1>Spa Capilar</h1>
-                    <div class="img-servicos"></div>
-                    <p>A partir de R$ 119,90</p>
+                    <h1>Pacotes</h1>
+                    <img src="public/images/home/pacotes-img.jpeg" alt="">
+                    <p>A partir de R$ 250,00</p>
                     <a href="#">Agendar agora</a>
                 </article>
             </div>
           </section>
-        
+          <section id="loja">
+            <div id="texto-loja">
+                <h1>Conheça nossa loja exclusiva!</h1>
+                <h2>Produtos selecionados para realçar sua beleza e estilo.</h2>
+                <p>Descubra itens de skincare, acessórios, cosméticos e até aqueles achadinhos queridinhos da Shopee — tudo num só lugar! Enviamos para todo o Brasil com carinho e cuidado.</p>
+                <a href="#">Ver todos os produtos</a>
+            </div>
+            <div id="imagem-loja">
+                <img src="public/images/home/Lumina_Loja_Produtos.jpg" alt="">
+            </div>
+          </section>
+        <section id="depoimentos">
+            <h1>Depoimentos</h1>
+            <h2>Experiências reais de quem já passou por aqui</h2>
+
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="100"
+            slides-per-view="3">
+            <swiper-slide>
+                <img src="public/images/home/avaliacao/pessoa1.png" alt="">
+                <h1>Juliana M.</h1>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Foi minha primeira vez no Lumina e já virou meu lugar favorito! Atendimento impecável e ambiente super acolhedor. Saí me sentindo renovada!</p>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="public/images/home/avaliacao/pessoa2.png" alt="">
+                <h1>João A.</h1>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>O cuidado que eles têm com cada detalhe é surreal. Fiz as unhas e uma limpeza de pele — nunca me senti tão bem cuidada. Recomendo de olhos fechados!</p>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="public/images/home/avaliacao/pessoa3.png" alt="">
+                <h1>Gustavo F.</h1>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Comprei produtos para a minha esposa, ela amou, gostou da qualidade, o cheiro, ela gostou de tudo. Sou muito grato a Lumina!</p>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="public/images/home/avaliacao/pessoa4.png" alt="">
+                <h1>Vanessa L.</h1>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Serviço de primeira, preço justo e aquele cafézinho enquanto espera… é carinho até nos detalhes.</p>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="public/images/home/avaliacao/pessoa5.png" alt="">
+                <h1>Daniel P.</h1>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>O ambiente é muito bonito e a equipe é simpática, mas o atendimento demorou mais do que o esperado. A profissional foi atenciosa.</p>
+            </swiper-slide>
+        </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <footer>
+        <div>
+            <img src="public/images/logo-lumina-beaury.png" alt="">
+        </div>
+        <div>
+            <h1><i class="fa-solid fa-phone"></i> Contato</h1>
+            <ul>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">Telefone</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Endereço</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </footer>
     <script src="javascript/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/13c88f5cf0.js" crossorigin="anonymous"></script>
 </body>
 </html>

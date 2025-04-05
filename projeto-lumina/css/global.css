@@ -108,7 +108,7 @@ main > section#sobre-nos {
     justify-content: space-around;
     height: 100%;
     padding: 90px 50px 80px 90px;
-    background-color: #d6bdd6;;
+    background-color: #d6bdd6;
 }
 
 section#sobre-nos > #sobre-nos-inf > h1 {
@@ -165,14 +165,8 @@ section#sobre-nos > #sobre-nos-mapa > h1 {
     background-color: #d6bdd6;;
 }
 
-
-section#servicos {
-    height: 200px;
-    background-color: #e7dae7;
-}
-
 main > section#nossos-servicos {
-    height: 2000px;
+    height: 100%;
 }
 
 main > section#nossos-servicos > h1 {
@@ -187,7 +181,7 @@ section#nossos-servicos > #servicos {
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     gap: 80px;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
     justify-items: center;
 }
 
@@ -204,7 +198,7 @@ section#nossos-servicos > #servicos > article {
 
 section#nossos-servicos > #servicos > article > h1 {
     font-family: var(--font-paraf2);
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 10px 0px 10px 0px;
 }
 
@@ -248,3 +242,110 @@ section#nossos-servicos > #servicos > article > a:hover {
     background-color: var(--cor4);
     transition: .4s;
 }
+
+
+
+/* LOJA */
+
+main > section#loja {
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+    padding: 90px 50px 80px 90px;
+    background-color: #d6bdd6;   
+}
+
+section#loja > #texto-loja > h1 {
+    font-family: var(--font-titulo1);
+    font-size: 4em;
+    color: var(--cor4);
+}
+
+section#loja > #texto-loja > h2 {
+    font-family: var(--font-titulo1);
+    font-size: 2em;
+    color: var(--cor4);
+}
+
+section#loja > #texto-loja > p {
+    font-family: var(--font-paraf1);
+    font-size: 1.5em;
+    padding: 30px 0px 50px 0px;
+    width: 700px;
+}
+
+section#loja > #texto-loja > a {
+    font-family: var(--font-paraf1);
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: var(--cor4);
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section#loja > #texto-loja > a:hover {
+    background-color: #b14b81;
+    transition: .2s;
+}
+
+section#loja > #imagem-loja > img {
+    font-family: var(--font-paraf1);
+    width: 700px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    mix-blend-mode: multiply;
+}
+
+#depoimentos {
+    margin: auto;
+    text-align: center;
+    width: 1200px;
+    padding: 50px;
+}
+
+main section#depoimentos > h1 {
+    font-family: var(--font-titulo1);
+    font-size: 4em;
+    color: var(--cor4);
+    letter-spacing: 5px;
+    padding: 5px;
+    
+
+}
+
+main section#depoimentos > h2 {
+    font-family: var(--font-paraf1);
+    font-size: 1.5em;
+    color: var(--cor4);
+    padding: 0px 0px 20px 0px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    background-color: var(--cor3);
+    height: 300px;
+}
+
+footer > div {
+    border: 1px solid red;
+}
+
+footer > div > img {
+    width: 100%;
+}
+
+footer > div > h1 {
+    padding: 50px 0px 0px 50px;
+    font-family: var(--font-paraf1);
+    font-size: 2em;
+}
+
+footer > div > ul {
+    padding: 0px 0px 0px 50px;
+    font-family: var(--font-paraf1);
+    font-size: 1.3em;
+    list-style-type: none;
+}
+
