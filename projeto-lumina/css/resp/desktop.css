@@ -2,6 +2,7 @@
     /*---------------SOBRE NÓS---------------*/
     main > section#sobre-nos {
         padding: 60px 50px 80px 60px;
+        width: 100%;
     }
     
     section#sobre-nos > #sobre-nos-inf > h1 {
