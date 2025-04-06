@@ -103,17 +103,20 @@ section#agendar > a:hover {
 }
 
 main > section#sobre-nos {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
     height: 100%;
-    padding: 90px 50px 80px 90px;
+    width: 100%;
+    padding: 70px 0px 70px 0px;
     background-color: #d6bdd6;
 }
 
 section#sobre-nos > #sobre-nos-inf > h1 {
 
-    font-size: 4em;
+    font-size: 3.3em;
+
     font-family: var(--font-titulo1);
     color: var(--cor4);
     background-color: #d6bdd6;;
@@ -127,19 +130,20 @@ section#sobre-nos > #sobre-nos-inf > h2 {
     background-color: #d6bdd6;;
 }
 
-section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
-    margin-top: 5px;
-    width: 750px;
-    font-size: 1.3em;
+
+section#sobre-nos > #sobre-nos-inf > p {
+    margin-top: 10px;
+    width: 650px;
+    font-size: 1.5em;
     font-family: var(--font-titulo1);
     color: var(--cor4);
     background-color: #d6bdd6;
 }
 
-section#sobre-nos > #sobre-nos-inf > p {
-    margin-top: 10px;
-    width: 750px;
-    font-size: 1.5em;
+section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
+    margin-top: 5px;
+    width: 650px;
+    font-size: 1.3em;
     font-family: var(--font-titulo1);
     color: var(--cor4);
     background-color: #d6bdd6;
@@ -157,13 +161,23 @@ section#sobre-nos > #sobre-nos-inf > ul > li {
 
 }
 
+section#sobre-nos > #sobre-nos-mapa iframe {
+    width: 700px;
+    height: 370px;
+    border: 1px solid #822659;
+    padding: 5px;
+}
+
 section#sobre-nos > #sobre-nos-mapa > h1 {
     text-align: center;
     font-size: 4em;
+    margin-bottom: 10px;
     font-family: var(--font-titulo1);
     color: var(--cor4);
     background-color: #d6bdd6;;
 }
+
+/*---------------NOSSOS SERVIÇOS---------------*/
 
 main > section#nossos-servicos {
     height: 100%;
@@ -179,7 +193,7 @@ main > section#nossos-servicos > h1 {
 section#nossos-servicos > #servicos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-    gap: 80px;
+    gap: 50px;
     max-width: 1500px;
     margin: 0 auto 100px auto;
     justify-items: center;
@@ -246,15 +260,14 @@ section#nossos-servicos > #servicos > article > a:hover {
     transition: .4s;
 }
 
-
-
-/* LOJA */
+/*---------------LOJINHA---------------*/
 
 main > section#loja {
-    display: flex;
-    justify-content: space-evenly;
-    height: 550px;
-    padding: 90px 50px 80px 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 70px 0px 70px 0px;
     background-color: #d6bdd6;   
 }
 
@@ -299,6 +312,8 @@ section#loja > #imagem-loja > img {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     mix-blend-mode: multiply;
 }
+
+/*---------------DEPOIMENTOS---------------*/
 
 #depoimentos {
     margin: auto;
