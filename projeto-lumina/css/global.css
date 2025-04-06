@@ -24,13 +24,13 @@
 /* Site */
 
 * {
-    margin: 0px;
-    padding: 0px;
-    /* border: 1px red solid; */
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #e7dae7;
+    background-color: #e7dae7;  
+
 }
 
 header {
@@ -220,12 +220,14 @@ section#nossos-servicos > #servicos > article > img {
 section#nossos-servicos > #servicos > article > p {
     font-size: 1.5em;
     font-family: var(--font-paraf2);
+    
 }
 
 section#nossos-servicos > #servicos > article > p > spam {
     font-size: 0.6em;
     text-decoration: line-through;
     color: rgb(29, 29, 29);
+
 }
 
 section#nossos-servicos > #servicos > article > a {
@@ -236,6 +238,7 @@ section#nossos-servicos > #servicos > article > a {
     text-decoration: none;
     padding: 10px 60px 10px 60px;
     margin: 10px;
+
 }
 
 section#nossos-servicos > #servicos > article > a:hover {
@@ -323,29 +326,45 @@ main section#depoimentos > h2 {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-items: center; 
     background-color: var(--cor3);
     height: 300px;
 }
 
-footer > div {
-    border: 1px solid red;
+footer div {
+    height: 100%;
 }
 
-footer > div > img {
-    width: 100%;
+footer div img {
+    width: 97%;
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
 }
 
-footer > div > h1 {
-    padding: 50px 0px 0px 50px;
+footer div h1 {
+    margin-top: 50px;
     font-family: var(--font-paraf1);
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
-footer > div > ul {
-    padding: 0px 0px 0px 50px;
+footer div h1 i {
+    padding-right: 10px;
+}
+
+footer div ul {
     font-family: var(--font-paraf1);
     font-size: 1.3em;
     list-style-type: none;
 }
 
+footer div  ul  li a {
+    color: black;
+    text-decoration: underline;
+}
+
+footer div  ul  li a:hover {
+    color: var(--cor4);
+    transform: .4s;
+}
