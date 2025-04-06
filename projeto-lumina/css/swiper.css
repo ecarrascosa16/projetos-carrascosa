@@ -167,7 +167,7 @@
   }
   
   #depoimentos swiper-slide > img {  
-    width: 120px;
+    width: 90px;
   }
 
   #depoimentos swiper-slide > h1 {
@@ -177,6 +177,6 @@
 
   #depoimentos swiper-slide > p {
     margin: 5px;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }

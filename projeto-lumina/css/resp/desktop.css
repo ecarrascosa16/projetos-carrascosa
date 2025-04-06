@@ -1,8 +1,8 @@
 @media (max-width: 1500px) {
     /*---------------SOBRE NÓS---------------*/
     main > section#sobre-nos {
-        padding: 60px 50px 80px 60px;
-        width: 100%;
+        padding: 60px 0px 80px 60px;
+        width: 94.5vw;
     }
     
     section#sobre-nos > #sobre-nos-inf > h1 {
@@ -52,8 +52,13 @@
 @media (max-width: 1100px) {
     /*---------------SOBRE NÓS---------------*/
 
+    * {
+        border: 1px solid red;
+    }
+
     main > section#sobre-nos {
-        justify-items: left;
+        padding: 60px 0px 80px 60px;
+        width: 94.5vw;
     }
 
     section#sobre-nos > #sobre-nos-inf {
@@ -65,7 +70,7 @@
     }
     
     section#sobre-nos > #sobre-nos-inf > p {
-        width: 500px;
+        width: 450px;
         font-size: 1.2em;
     }
 
@@ -75,12 +80,12 @@
     }
 
     section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
-        width: 500px;
+        width:450px;
     }
 
     section#sobre-nos > #sobre-nos-mapa iframe {
-        width: 450px;
-        height: 370px;
+        width: 400px;
+        height: 317px;
     }
 
     /*---------------LOJINHA---------------*/
@@ -107,7 +112,8 @@
     /*---------------DEPOIMENTOS---------------*/
 
     #depoimentos {
-        width: 1000px;
+        width: 900px;
     }
+
 
 }
