@@ -33,6 +33,7 @@ body {
 
 }
 
+
 header {
     position: fixed;
     z-index: 1000;
@@ -79,7 +80,6 @@ header > section#login > a:hover {
     transition: .2s;
 }
 
-
 main > section#agendar {
     display: flex;
     justify-content: center; 
@@ -102,6 +102,8 @@ section#agendar > a:hover {
     background-color: #822659;
 }
 
+
+
 main > section#sobre-nos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,6 +111,7 @@ main > section#sobre-nos {
     justify-items: center;
     height: 100%;
     width: 100%;
+    min-width: 94%;
     padding: 70px 0px 70px 0px;
     background-color: #d6bdd6;
 }
@@ -267,7 +270,7 @@ main > section#loja {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    padding: 70px 0px 70px 0px;
+    padding: 70px 20px 70px 20px;
     background-color: #d6bdd6;   
 }
 

@@ -2,7 +2,6 @@
     /*---------------SOBRE NÓS---------------*/
     main > section#sobre-nos {
         padding: 60px 0px 80px 60px;
-        width: 94.5vw;
     }
     
     section#sobre-nos > #sobre-nos-inf > h1 {
@@ -51,10 +50,6 @@
 
 @media (max-width: 1100px) {
     /*---------------SOBRE NÓS---------------*/
-
-    * {
-        border: 1px solid red;
-    }
 
     main > section#sobre-nos {
         padding: 60px 0px 80px 60px;

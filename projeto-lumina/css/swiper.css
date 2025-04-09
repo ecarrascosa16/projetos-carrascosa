@@ -18,6 +18,8 @@
 
 }
 
+/*---------------PAINEL SLIDE INICIAL---------------*/
+
 #imagens-central swiper-container {
   padding-top: 100px;
   width: 100%;
@@ -70,6 +72,8 @@
   transform: rotate(-90deg);
 }
 
+/* DESKTOP */
+
 @media (max-width: 1500px) {
   #imagens-central swiper-container {
     padding-top: 100px;
@@ -86,9 +90,17 @@
   }
 }
 
+/*---------------TABLETS---------------*/
+
+@media (max-width: 770px) {
+  #imagens-central swiper-container {
+    width: 100%;
+    height: 350px;
+  }
+}
 
 
-/* DEPOIMENTOS */
+/*---------------DEPOIMENTOS---------------*/
 
 
 #depoimentos swiper-container {
@@ -136,6 +148,7 @@
   color: white;
 }
 
+/* DESKTOP */
 
 @media (max-width: 1500px) {
   
@@ -180,3 +193,4 @@
     font-size: 0.8em;
   }
 }
+

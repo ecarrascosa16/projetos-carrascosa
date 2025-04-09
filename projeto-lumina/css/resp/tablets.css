@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+
+    --branco: #FFFFFF;
+    --cor1: #D4AF37;
+    --cor2: #E6A4B4;
+    --cor3: #C8A2C8;
+    --cor4: #822659;
+    --cor5: #E3C29D;
+    --cor6: #3E3E3E;
+    --preto: #000000;
+
+    --font-titulo1: "Marcellus", serif;
+    --font-titulo2: "Playfair Display", serif;
+    --font-paraf1: "Poppins", sans-serif; 
+    --font-paraf2: "Montserrat", sans-serif;;
+
+}
+
+@media (max-width: 850px) {
+
+    header > a > img {
+        width: 100px;
+    }
+    
+    nav > a {
+        padding: 10px;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+
+    header > section#login > a {
+        padding: 8px 10px 8px 10px;
+        font-size: 1.2em;
+    }
+}
