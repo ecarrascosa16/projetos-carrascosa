@@ -128,10 +128,7 @@
         margin: 100px 10px 100px 10px;    
     
     }
-    
-    * {
-        border: 1px solid red;
-    }
+
 
     /*----------------------------------
     |           Sobre nós              |
@@ -144,7 +141,7 @@
 
     section#sobre-nos > #sobre-nos-inf > h1 {
         width: 330px;
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     
     section#sobre-nos > #sobre-nos-inf > p,
@@ -183,18 +180,18 @@
 
     section#loja > #texto-loja > h1 {
         font-size: 1.6em;
-        width: 370px
+        width: 330px;
     }
     
     section#loja > #texto-loja > h2 {
         font-size: .9em;
-        width: 370px
+        width: 330px;
     }
     
     section#loja > #texto-loja > p {
-        font-size: 1.3em;
+        font-size: 1.1em;
         padding: 10px 0px 20px 0px;
-        width: 370px;
+        width: 330px;
     }
 
     section#loja > #texto-loja > a {
@@ -220,7 +217,7 @@
     }
 
     #equipe > #funcionarios > div.funcionario {
-        width: 300px;
+        width: 280px;
         height: 90%;
         padding: 20px;
     }
