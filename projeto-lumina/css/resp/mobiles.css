@@ -22,7 +22,7 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 610px) {
 
     /*----------------------------------
     |            HEADER               |
@@ -125,41 +125,41 @@
     
 
     section#sobre-nos > #sobre-nos-inf {
-        width: 340px;
+        width: 30px;
     }
 
 
     section#sobre-nos > #sobre-nos-inf > h1 {
         font-size: 1.9em;
-        width: 340px;
+        width: 30px;
     }
     
     
     section#sobre-nos > #sobre-nos-inf > p {
-        width: 340px;
+        width: 30px;
     }
 
     section#sobre-nos > #sobre-nos-inf > ul > li {
         font-size: 1.3em;
-        width: 340px;
+        width: 30px;
     }
 
     section#sobre-nos > #sobre-nos-inf > h2 {
-        width: 340px;
+        width: 30px;
         
     }
 
     section#sobre-nos > #sobre-nos-inf > ul {
-        width: 340px;
+        width: 30px;
     }
     
     section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
-        width: 340px;
+        width: 30px;
         
     }
     
     section#sobre-nos > #sobre-nos-mapa iframe {
-        width: 340px;
+        width: 30px;
         height: 370px;
     }
 
@@ -187,6 +187,61 @@
 
     main > section#nossos-servicos > h1 {
         font-size: 3.5em;
+    }
+
+    /*----------------------------------
+    |            EQUIPE                |
+    ----------------------------------*/
+
+    main > #equipe {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #equipe > h1 {
+        font-size: 2em;
+    }
+
+    #equipe > h2 {
+        font-size: 1.2em;
+    }
+
+    #equipe > #funcionarios > div.funcionario {
+
+        width: 300px;
+        height: 90%;
+        padding: 20px;
+    }
+
+    #equipe > #funcionarios > div.funcionario > .img-funcionario > img {
+        border-radius: 10px;
+        width: 300px;
+    }
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario {
+        width: 300px;
+    }
+    
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario > h1 {
+        font-size: 1.2em;
+        padding: 5px;
+        width: 290px;
+    }
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario > h2 {
+        font-size: .9em;
+        padding: 5px;
+        width: 290px;
+    }
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario > p {
+        font-size: 1em;
+        width: 290px;
+        padding: 5px;
     }
 
     /*----------------------------------
@@ -244,7 +299,7 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
     /*----------------------------------
     |            AGENDAR               |
