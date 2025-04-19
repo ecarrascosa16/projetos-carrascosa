@@ -125,41 +125,41 @@
     
 
     section#sobre-nos > #sobre-nos-inf {
-        width: 400px;
+        width: 340px;
     }
 
 
     section#sobre-nos > #sobre-nos-inf > h1 {
         font-size: 1.9em;
-        width: 400px;
+        width: 340px;
     }
     
     
     section#sobre-nos > #sobre-nos-inf > p {
-        width: 400px;
+        width: 340px;
     }
 
     section#sobre-nos > #sobre-nos-inf > ul > li {
         font-size: 1.3em;
-        width: 400px;
+        width: 340px;
     }
 
     section#sobre-nos > #sobre-nos-inf > h2 {
-        width: 400px;
+        width: 340px;
         
     }
 
     section#sobre-nos > #sobre-nos-inf > ul {
-        width: 400px;
+        width: 340px;
     }
     
     section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
-        width: 400px;
+        width: 340px;
         
     }
     
     section#sobre-nos > #sobre-nos-mapa iframe {
-        width: 400px;
+        width: 340px;
         height: 370px;
     }
 
@@ -247,6 +247,18 @@
 @media (max-width: 400px) {
 
     /*----------------------------------
+    |            AGENDAR               |
+    ----------------------------------*/
+
+    main > section#agendar {
+        display: flex;
+        justify-content: center; 
+        margin: 100px 10px 100px 10px;    
+    
+    }
+    
+
+    /*----------------------------------
     |           Sobre nós              |
     ----------------------------------*/
 
@@ -270,11 +282,11 @@
 
     section#sobre-nos > #sobre-nos-mapa iframe {
         width: 320px;
-        height: 330px;
+        height: 250px;
     }
 
     section#sobre-nos > #sobre-nos-mapa p {
-        font-size: .7em;
+        font-size: .5em;
         padding: 0px;
     }
 
