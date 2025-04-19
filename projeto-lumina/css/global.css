@@ -363,6 +363,7 @@ section#loja > #imagem-loja > img {
 main > #equipe {
     padding: 50px 0px 0px 0px;
     height: 100%;
+    width: 100%;
 }
 
 #equipe > h1 {
@@ -384,7 +385,7 @@ main > #equipe {
     justify-items: center;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    margin-top: 50px;
+    margin: 50px 0px 50px 0px;
 }
 
 #equipe > #funcionarios > div.funcionario {
