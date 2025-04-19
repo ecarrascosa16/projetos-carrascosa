@@ -98,3 +98,12 @@
     height: 350px;
   }
 }
+
+/*---------------CELULAR---------------*/
+
+@media (max-width: 600px) {
+  #imagens-central swiper-container {
+    width: 100%;
+    height: 250px;
+  }
+}
