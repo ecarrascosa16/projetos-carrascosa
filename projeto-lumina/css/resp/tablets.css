@@ -52,7 +52,7 @@
     section#sobre-nos > #sobre-nos-inf > h1 {
 
         font-size: 3.3em;
-        width: 650px;
+        width: 600px;
         font-family: var(--font-titulo1);
         color: var(--cor4);
         background-color: #d6bdd6;;
@@ -148,7 +148,7 @@
     }
 
     section#sobre-nos > #sobre-nos-inf > h1 {
-
+        width: 500px;
         font-size: 2em;
         font-family: var(--font-titulo1);
         color: var(--cor4);

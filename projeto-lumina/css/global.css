@@ -136,7 +136,6 @@ main > section#sobre-nos {
 section#sobre-nos > #sobre-nos-inf > h1 {
 
     font-size: 3.3em;
-
     font-family: var(--font-titulo1);
     color: var(--cor4);
     background-color: #d6bdd6;;
@@ -362,7 +361,7 @@ section#loja > #imagem-loja > img {
 |            EQUIPE                |
 ----------------------------------*/
 main > #equipe {
-    padding: 50px;
+    padding: 50px 0px 0px 0px;
     height: 100%;
 }
 

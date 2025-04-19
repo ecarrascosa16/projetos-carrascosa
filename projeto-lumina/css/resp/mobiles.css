@@ -122,8 +122,16 @@
     |            Sobre Nos             |
     ----------------------------------*/
 
+    
+
+    section#sobre-nos > #sobre-nos-inf {
+        width: 400px;
+    }
+
+
     section#sobre-nos > #sobre-nos-inf > h1 {
         font-size: 1.9em;
+        width: 400px;
     }
     
     
@@ -136,10 +144,18 @@
         width: 400px;
     }
 
+    section#sobre-nos > #sobre-nos-inf > h2 {
+        width: 400px;
+        
+    }
+
+    section#sobre-nos > #sobre-nos-inf > ul {
+        width: 400px;
+    }
     
     section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
-       width: 400px;
-
+        width: 400px;
+        
     }
     
     section#sobre-nos > #sobre-nos-mapa iframe {
@@ -148,7 +164,213 @@
     }
 
     section#sobre-nos > #sobre-nos-mapa p {
-        font-size: 1em;
+        font-size: .8em;
         padding: 10px;
     }
+
+    /*----------------------------------
+    |            CTA LOJA              |
+    ----------------------------------*/
+
+    main > section#loja {
+        padding: 30px 0px 40px 0px; 
+    }
+
+    section#loja > #texto-loja > a {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    
+    /*----------------------------------
+    |        Nossos servicos           |
+    ----------------------------------*/
+
+    main > section#nossos-servicos > h1 {
+        font-size: 3.5em;
+    }
+
+    /*----------------------------------
+    |            FOOTER                |
+    ----------------------------------*/
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        height: 100%;
+        
+    }
+
+    footer div {
+        height: 100%;
+        width: 100%;
+        margin: 15px;
+    }
+
+    * {
+        border: 1px solid red;
+    }
+
+    footer div#logo-footer {
+        display: none;
+    }
+
+
+    footer div h1 {
+        font-family: var(--font-paraf1);
+        font-size: 1.1em;
+        margin-top: 30px;
+    }
+
+    footer div h1 i {
+        padding-right: 3px;
+    }
+
+    footer div ul {
+        font-family: var(--font-paraf1);
+        font-size: .9em;
+        list-style-type: none;
+        margin-bottom: 30px;
+    }
+
+    footer div  ul  li a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    footer div  ul  li a:hover {
+        color: var(--cor4);
+        transform: .4s;
+    }
+
+    /*-------- fim da seção footer --------*/
 }
+
+
+@media (max-width: 400px) {
+
+    /*----------------------------------
+    |           Sobre nós              |
+    ----------------------------------*/
+
+    main > section#sobre-nos > #sobre-nos-inf  {
+        padding-left: 10px;
+        width: 330px;
+    }
+
+    section#sobre-nos > #sobre-nos-inf > h1 {
+        width: 330px;
+        font-size: 1.6em;
+    }
+    
+    section#sobre-nos > #sobre-nos-inf > p,
+    section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao,
+    section#sobre-nos > #sobre-nos-inf h2,
+    section#sobre-nos > #sobre-nos-inf ul,
+    section#sobre-nos > #sobre-nos-inf > ul > li {
+        width: 330px;
+    }
+
+    section#sobre-nos > #sobre-nos-mapa iframe {
+        width: 320px;
+        height: 330px;
+    }
+
+    section#sobre-nos > #sobre-nos-mapa p {
+        font-size: .7em;
+        padding: 0px;
+    }
+
+    /*----------------------------------
+    |        Nossos servicos           |
+    ----------------------------------*/
+
+    main > section#nossos-servicos > h1 {
+        font-size: 2.4em;
+    }
+
+    /*----------------------------------
+    |            CTA LOJA              |
+    ----------------------------------*/
+
+    main > section#loja {
+        padding: 30px 0px 40px 0px; 
+    }
+
+    section#loja > #texto-loja > h1 {
+        font-size: 1.6em;
+        width: 370px
+    }
+    
+    section#loja > #texto-loja > h2 {
+        font-size: .9em;
+        width: 370px
+    }
+    
+    section#loja > #texto-loja > p {
+        font-size: 1.3em;
+        padding: 10px 0px 20px 0px;
+        width: 370px;
+    }
+
+    section#loja > #texto-loja > a {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    /*----------------------------------
+    |            EQUIPE                |
+    ----------------------------------*/
+
+    main > #equipe {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #equipe > h1 {
+        font-size: 2em;
+    }
+
+    #equipe > h2 {
+        font-size: 1.2em;
+    }
+
+    #equipe > #funcionarios > div.funcionario {
+
+        width: 300px;
+        height: 90%;
+        padding: 20px;
+    }
+
+    #equipe > #funcionarios > div.funcionario > .img-funcionario > img {
+        border-radius: 10px;
+        width: 300px;
+    }
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario {
+        width: 300px;
+    }
+    
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario > h1 {
+        font-size: 1.2em;
+        padding: 5px;
+        width: 290px;
+    }
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario > h2 {
+        font-size: .9em;
+        padding: 5px;
+        width: 290px;
+    }
+    
+    #equipe > #funcionarios > div.funcionario > .info-funcionario > p {
+        font-size: 1em;
+        width: 290px;
+        padding: 5px;
+    }
+}
+
