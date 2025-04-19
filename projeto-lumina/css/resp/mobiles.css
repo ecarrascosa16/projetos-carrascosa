@@ -207,9 +207,6 @@
         margin: 15px;
     }
 
-    * {
-        border: 1px solid red;
-    }
 
     footer div#logo-footer {
         display: none;
