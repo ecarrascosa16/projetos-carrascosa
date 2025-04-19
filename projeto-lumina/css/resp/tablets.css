@@ -23,6 +23,12 @@
 
 @media (max-width: 850px) {
 
+    /*--------------- HEADER ---------------*/
+    header#header-celular {
+        display: none;
+    }
+
+
     header > a > img {
         width: 100px;
     }
@@ -37,4 +43,170 @@
         padding: 8px 10px 8px 10px;
         font-size: 1.2em;
     }
+
+    main > section#sobre-nos {
+        grid-template-columns: 1fr;
+        justify-items: normal;
+    }
+
+    section#sobre-nos > #sobre-nos-inf > h1 {
+
+        font-size: 3.3em;
+        width: 650px;
+        font-family: var(--font-titulo1);
+        color: var(--cor4);
+        background-color: #d6bdd6;;
+    }
+    
+    
+    section#sobre-nos > #sobre-nos-inf > p {
+        width: 600px;
+    }
+
+    
+    section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
+       width: 600px;
+
+    }
+
+    section#sobre-nos > #sobre-nos-mapa {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    section#sobre-nos > #sobre-nos-mapa iframe {
+        width: 700px;
+        height: 370px;
+        border: 1px solid #822659;
+        padding: 5px;
+    }
+
+    section#sobre-nos > #sobre-nos-mapa p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    /*---------------LOJINHA---------------*/
+
+    section#loja > #texto-loja > h1 {
+        font-size: 1.9em;
+    }
+
+    section#loja > #texto-loja > h2 {
+        font-size: 1em;
+    }
+
+    section#loja > #texto-loja > p {
+        font-size: 1em;
+        width: 400px;
+    }
+
+    section#loja > #imagem-loja > img {
+        width: 290px;
+    }
+
+    /*----------------------------------
+    |            FOOTER                |
+    ----------------------------------*/
+
+    footer div#logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div#logo-footer img {
+        width: 90%;
+    }
+
+    footer div h1 {
+        font-size: 1.3em;
+    }
+
+    footer div h1 i {
+        padding-right: 3px;
+    }
+
+    footer div ul {
+        font-size: 1.1em;
+    }
+
+    /*-------- fim da seção footer --------*/
+    
+
+
+}
+
+@media (max-width: 650px) {
+
+    /*--------------- HEADER ---------------*/
+    header#header-celular {
+        display: none;
+    }
+
+    section#sobre-nos > #sobre-nos-inf > h1 {
+
+        font-size: 2em;
+        font-family: var(--font-titulo1);
+        color: var(--cor4);
+        background-color: #d6bdd6;;
+    }
+    
+    
+    section#sobre-nos > #sobre-nos-inf > p {
+        width: 500px;
+    }
+
+    
+    section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
+       width: 500px;
+
+    }
+    
+    section#sobre-nos > #sobre-nos-mapa iframe {
+        width: 500px;
+        height: 370px;
+    }
+
+    section#sobre-nos > #sobre-nos-mapa p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    /*----------------------------------
+    |            CTA LOJA              |
+    ----------------------------------*/
+
+    main > section#loja {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px 0px 40px 0px; 
+    }
+
+    section#loja > #imagem-loja > img {
+        display: none;
+    }
+
+    section#loja > #texto-loja > a {
+        font-size: 1.3em;
+    }
+
+    /*-------- fim da seção CTA loja --------*/
+
+    /*----------------------------------
+    |            EQUIPE                |
+    ----------------------------------*/
+
+    #equipe > h1 {
+        font-size: 2.5em;
+    }
+
+    #equipe > h2 {
+        font-size: 1.3em;
+    }
+
+    /*-------- fim da seção equipe --------*/
 }

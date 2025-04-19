@@ -21,7 +21,7 @@
 
 }
 
-/* Site */
+
 
 * {
     margin: 0;
@@ -33,10 +33,17 @@ body {
 
 }
 
+/*==================================
+=            HEADER                =
+==================================*/
+
+header#header-celular {
+    display: none;
+}
 
 header {
     position: fixed;
-    z-index: 1000;
+    z-index: 9999;
     background-color: var(--cor3);
     height: 100px;
     width: 100%;
@@ -80,6 +87,12 @@ header > section#login > a:hover {
     transition: .2s;
 }
 
+/*-------- fim da seção header --------*/
+
+/*----------------------------------
+|            AGENDAR               |
+----------------------------------*/
+
 main > section#agendar {
     display: flex;
     justify-content: center; 
@@ -102,8 +115,12 @@ section#agendar > a:hover {
     background-color: #822659;
 }
 
+/*-------- fim da seção agendar --------*/
 
 
+/*----------------------------------
+|           Sobre nós              |
+----------------------------------*/
 main > section#sobre-nos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,13 +181,6 @@ section#sobre-nos > #sobre-nos-inf > ul > li {
 
 }
 
-section#sobre-nos > #sobre-nos-mapa iframe {
-    width: 700px;
-    height: 370px;
-    border: 1px solid #822659;
-    padding: 5px;
-}
-
 section#sobre-nos > #sobre-nos-mapa > h1 {
     text-align: center;
     font-size: 4em;
@@ -180,7 +190,33 @@ section#sobre-nos > #sobre-nos-mapa > h1 {
     background-color: #d6bdd6;;
 }
 
-/*---------------NOSSOS SERVIÇOS---------------*/
+section#sobre-nos > #sobre-nos-mapa iframe {
+    width: 700px;
+    height: 370px;
+    border: 1px solid #822659;
+    padding: 5px;
+}
+
+section#sobre-nos > #sobre-nos-mapa p {
+    color: var(--cor6);
+    font-size: 1em;
+    font-family: var(--font-paraf1);
+    text-align: center;
+    padding: 10px;
+}
+
+section#sobre-nos > #sobre-nos-mapa > p > i {
+    color: var(--cor6);
+    font-size: 1em;
+    
+    padding: 10px;
+}
+
+/*-------- fim da seção sobre nós --------*/
+
+/*----------------------------------
+|        Nossos servicos           |
+----------------------------------*/
 
 main > section#nossos-servicos {
     height: 100%;
@@ -263,7 +299,11 @@ section#nossos-servicos > #servicos > article > a:hover {
     transition: .4s;
 }
 
-/*---------------LOJINHA---------------*/
+/*-------- fim da seção nossos serviços --------*/
+
+/*----------------------------------
+|            CTA LOJA              |
+----------------------------------*/
 
 main > section#loja {
     display: grid;
@@ -316,49 +356,113 @@ section#loja > #imagem-loja > img {
     mix-blend-mode: multiply;
 }
 
-/*---------------DEPOIMENTOS---------------*/
+/*-------- fim da seção CTA loja --------*/
 
-#depoimentos {
-    margin: auto;
-    text-align: center;
-    width: 1200px;
+/*----------------------------------
+|            EQUIPE                |
+----------------------------------*/
+main > #equipe {
     padding: 50px;
+    height: 100%;
 }
 
-main section#depoimentos > h1 {
-    font-family: var(--font-titulo1);
+#equipe > h1 {
+    text-align: center;
     font-size: 4em;
+    font-family: var(--font-titulo1);
     color: var(--cor4);
-    letter-spacing: 5px;
-    padding: 5px;
-    
-
 }
 
-main section#depoimentos > h2 {
-    font-family: var(--font-paraf1);
+#equipe > h2 {
+    text-align: center;
     font-size: 1.5em;
+    font-family: var(--font-titulo1);
     color: var(--cor4);
-    padding: 0px 0px 20px 0px;
 }
+
+#equipe > #funcionarios {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-top: 50px;
+}
+
+#equipe > #funcionarios > div.funcionario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 400px;
+    height: 90%;
+    border-radius: 10px;
+    border: 1px solid var(--cor6);
+    padding: 20px;
+}
+
+#equipe > #funcionarios > div.funcionario > .img-funcionario > img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+#equipe > #funcionarios > div.funcionario > .info-funcionario {
+    width: 400px;
+}
+
+
+#equipe > #funcionarios > div.funcionario > .info-funcionario > h1 {
+    font-size: 1.2em;
+    font-family: var(--font-paraf1);
+    padding: 5px;
+    color: var(--cor6);
+}
+
+#equipe > #funcionarios > div.funcionario > .info-funcionario > h2 {
+    font-size: .9em;
+    font-family: var(--font-paraf1);
+    padding: 5px;
+    color: var(--cor6);
+}
+
+#equipe > #funcionarios > div.funcionario > .info-funcionario > p {
+    font-size: 1em;
+    font-family: var(--font-paraf1);
+    padding: 5px;
+    color: var(--cor6);
+}
+
+#equipe > #funcionarios > div.funcionario > .info-funcionario > a > i {
+    font-size: 2em;
+    padding: 5px 5px 0px 5px;
+    color: var(--cor6);
+}
+
+
+/*-------- fim da seção equipe --------*/
+
+/*----------------------------------
+|            FOOTER                |
+----------------------------------*/
 
 footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     justify-items: center; 
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor3);
     height: 300px;
 }
 
 footer div {
     height: 100%;
+    width: 100%;
 }
 
-footer div img {
-    width: 97%;
-    min-width: 300px;
-    margin: auto;
-    text-align: center;
+footer div#logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer div h1 {
@@ -386,3 +490,8 @@ footer div  ul  li a:hover {
     color: var(--cor4);
     transform: .4s;
 }
+
+/*-------- fim da seção footer --------*/
+
+
+

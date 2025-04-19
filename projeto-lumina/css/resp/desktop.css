@@ -1,9 +1,38 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+
+    --branco: #FFFFFF;
+    --cor1: #D4AF37;
+    --cor2: #E6A4B4;
+    --cor3: #C8A2C8;
+    --cor4: #822659;
+    --cor5: #E3C29D;
+    --cor6: #3E3E3E;
+    --preto: #000000;
+
+    --font-titulo1: "Marcellus", serif;
+    --font-titulo2: "Playfair Display", serif;
+    --font-paraf1: "Poppins", sans-serif; 
+    --font-paraf2: "Montserrat", sans-serif;;
+
+}
+
 @media (max-width: 1500px) {
-    /*---------------SOBRE NÓS---------------*/
-    main > section#sobre-nos {
-        padding: 60px 0px 80px 60px;
+    /*--------------- HEADER ---------------*/
+    header#header-celular {
+        display: none;
     }
-    
+
+    /*---------------SOBRE NÓS---------------*/
+    main > section#sobre-nos > #sobre-nos-inf {
+        padding-left: 30px;
+        
+    }
+
     section#sobre-nos > #sobre-nos-inf > h1 {
         font-size: 3em;
     }
@@ -18,8 +47,13 @@
     }
 
     section#sobre-nos > #sobre-nos-mapa iframe {
-        width: 500px;
+        width: 450px;
         height: 317px;
+    }
+
+    section#sobre-nos > #sobre-nos-mapa p {
+        font-size: .7em;
+        padding: 5px;
     }
 
     /*---------------LOJINHA---------------*/
@@ -42,18 +76,30 @@
     section#loja > #imagem-loja > img {
         width: 600px;
     }
+
+    /*---------------DEPOIMENTOS---------------*/
+
+    #depoimentos {
+        width: 1100px;
+    }
     
 }
 
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
+    
+    /*--------------- HEADER ---------------*/
+    header#header-celular {
+        display: none;
+    }
+
     /*---------------SOBRE NÓS---------------*/
 
     main > section#sobre-nos {
-        padding: 60px 0px 80px 60px;
-        width: 94.5vw;
+        padding: 60px 0px 80px 0px;
+
     }
 
     section#sobre-nos > #sobre-nos-inf {
@@ -102,12 +148,6 @@
 
     section#loja > #imagem-loja > img {
         width: 480px;
-    }
-
-    /*---------------DEPOIMENTOS---------------*/
-
-    #depoimentos {
-        width: 900px;
     }
 
 
