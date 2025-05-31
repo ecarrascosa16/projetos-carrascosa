@@ -87,7 +87,6 @@
     transform: rotate(-45deg) translate(6px, -6px);
     }
     
-    /* Básico para o ícone hambúrguer */
     #menu-toggle {
     cursor: pointer;
     display: flex;
@@ -99,7 +98,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3s ease;
     }
 
