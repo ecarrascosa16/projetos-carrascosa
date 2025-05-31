@@ -8,7 +8,7 @@
     --branco: #FFFFFF;
     --cor1: #D4AF37;
     --cor2: #E6A4B4;
-    --cor3: #C8A2C8;
+    --cor3: #a576a5;
     --cor4: #822659;
     --cor5: #E3C29D;
     --cor6: #3E3E3E;
@@ -44,7 +44,7 @@ header#header-celular {
 header {
     position: fixed;
     z-index: 9999;
-    background-color: var(--cor3);
+    background-color: #a576a5;
     height: 100px;
     width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
@@ -54,14 +54,15 @@ header {
 }
 
 header > a > img {
-    width: 150px;
+    width: 90px;
+    filter: brightness(100);
 }
 
 nav > a {
-    color: var(--preto);
+    color: var(--branco);
     text-decoration: none;
     padding: 30px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: var(--font-titulo1);
     letter-spacing: 2px;
 }
@@ -69,21 +70,21 @@ nav > a {
 nav > a:hover {
     font-size: 1.6em;
     transition: 0.4s;
-    color:#3d3d3d
+    color: var(--cor3);
 }
 
 header > section#login > a {
-    color: var(--preto);
+    color: var(--branco);
     text-decoration: none;
     padding: 10px 30px 10px 30px;
     font-size: 1.4em;
     font-family: var(--font-titulo1);
-    border: 1px solid black;
+    border: 1px solid var(--branco);
 }
 
 header > section#login > a:hover {
     background-color: #c7a6c7;
-    border: 1px solid rgb(87, 87, 87);
+    border: 1px solid rgb(194, 194, 194);
     transition: .2s;
 }
 
@@ -122,20 +123,18 @@ section#agendar > a:hover {
 |           Sobre nós              |
 ----------------------------------*/
 main > section#sobre-nos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
     height: 100%;
-    width: 100%;
-    min-width: 94%;
-    padding: 70px 0px 70px 0px;
+    padding: 70px 30px 70px 30px;
+    align-items: center;
     background-color: #d6bdd6;
 }
 
-section#sobre-nos > #sobre-nos-inf > h1 {
 
-    font-size: 3.3em;
+section#sobre-nos > #sobre-nos-inf > h1 {
+    font-size: 3em;
+    width: 700px;
     font-family: var(--font-titulo1);
     color: var(--cor4);
     background-color: #d6bdd6;;
@@ -153,7 +152,7 @@ section#sobre-nos > #sobre-nos-inf > h2 {
 section#sobre-nos > #sobre-nos-inf > p {
     margin-top: 10px;
     width: 650px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: var(--font-titulo1);
     color: var(--cor4);
     background-color: #d6bdd6;
@@ -170,12 +169,14 @@ section#sobre-nos > #sobre-nos-inf > p#paraf-nossa-missao {
 
 section#sobre-nos > #sobre-nos-inf > ul {
     margin: 20px 0px 20px 0px; 
+    width: 600px;
 }
 
 section#sobre-nos > #sobre-nos-inf > ul > li {
     color: var(--cor6);
     margin-top: 10px; 
     font-size: 1.4em;
+    
     list-style-type: none;
 
 }
@@ -190,8 +191,8 @@ section#sobre-nos > #sobre-nos-mapa > h1 {
 }
 
 section#sobre-nos > #sobre-nos-mapa iframe {
-    width: 700px;
-    height: 370px;
+    width: 550px;
+    height: 300px;
     border: 1px solid #822659;
     padding: 5px;
 }
@@ -231,7 +232,7 @@ main > section#nossos-servicos > h1 {
 section#nossos-servicos > #servicos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-    gap: 50px;
+    gap: 30px;
     max-width: 1500px;
     margin: 0 auto 100px auto;
     justify-items: center;
@@ -239,38 +240,42 @@ section#nossos-servicos > #servicos {
 
 section#nossos-servicos > #servicos > article {
     border: 1px solid black;
-    height: 400px;
-    width: 280px;
+    height: 100%;
+    width: 250px;
     display: flex;
     flex-flow: column;
     align-items: center;
     border-radius: 3px;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 section#nossos-servicos > #servicos > article > h1 {
     font-family: var(--font-paraf2);
-    font-size: 1.5em;
+    font-size: 1.3em;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     margin: 10px 0px 10px 0px;
 }
 
 section#nossos-servicos > #servicos > article > div {
     margin: 5px 15px 10px 15px;
     width: 240px;
-    height: 250px;
     background-color: rgb(77, 77, 77);
 }
 
 section#nossos-servicos > #servicos > article > img {
     margin: 5px 15px 10px 15px;
-    width: 240px;
-    height: 250px;
+    width: 210px;
+    height: 230px;
     background-color: rgb(77, 77, 77);
     border-radius: 3px;
 }
 
 section#nossos-servicos > #servicos > article > p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: var(--font-paraf2);
     
 }
@@ -288,14 +293,14 @@ section#nossos-servicos > #servicos > article > a {
     color: white;
     font-family: var(--font-paraf2);
     text-decoration: none;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 45px 10px 45px;
     margin: 10px;
 
 }
 
 section#nossos-servicos > #servicos > article > a:hover {
     background-color: var(--cor4);
-    transition: .4s;
+    transition: .2s;
 }
 
 /*-------- fim da seção nossos serviços --------*/
@@ -383,7 +388,7 @@ main > #equipe {
 #equipe > #funcionarios {
     display: grid;
     justify-items: center;
-    gap: 10px;
+    gap: 50px;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin: 50px 0px 50px 0px;
 }
@@ -393,41 +398,37 @@ main > #equipe {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    width: 400px;
-    height: 90%;
+    width: 310px;
+    height: 100%;
     border-radius: 10px;
     border: 1px solid var(--cor6);
-    padding: 20px;
+    padding: 5px 20px 5px 20px;
 }
+
 
 #equipe > #funcionarios > div.funcionario > .img-funcionario > img {
-    width: 400px;
+    width: 330px;
     border-radius: 10px;
 }
-
-#equipe > #funcionarios > div.funcionario > .info-funcionario {
-    width: 400px;
-}
-
 
 #equipe > #funcionarios > div.funcionario > .info-funcionario > h1 {
     font-size: 1.2em;
     font-family: var(--font-paraf1);
-    padding: 5px;
+    padding: 5px 0px 5px 0px;
     color: var(--cor6);
 }
 
 #equipe > #funcionarios > div.funcionario > .info-funcionario > h2 {
     font-size: .9em;
+    padding: 5px 0px 5px 0px;
     font-family: var(--font-paraf1);
-    padding: 5px;
     color: var(--cor6);
 }
 
 #equipe > #funcionarios > div.funcionario > .info-funcionario > p {
     font-size: 1em;
+    padding: 5px 0px 5px 0px;
     font-family: var(--font-paraf1);
-    padding: 5px;
     color: var(--cor6);
 }
 
@@ -450,7 +451,7 @@ footer {
     justify-items: center; 
     justify-content: center;
     align-items: center;
-    background-color: var(--cor3);
+    background-color: #a576a5;
     height: 300px;
 }
 
@@ -462,10 +463,15 @@ footer div {
 footer div#logo-footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+footer div#logo-footer img {
+    height: 300px;
+    filter: brightness(100);
 }
 
 footer div h1 {
+    color: rgb(218, 218, 218);
     margin-top: 50px;
     font-family: var(--font-paraf1);
     font-size: 1.5em;
@@ -479,10 +485,11 @@ footer div ul {
     font-family: var(--font-paraf1);
     font-size: 1.3em;
     list-style-type: none;
+    
 }
 
 footer div  ul  li a {
-    color: black;
+    color: rgb(218, 218, 218);
     text-decoration: underline;
 }
 

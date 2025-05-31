@@ -30,7 +30,7 @@
 
 
     header > a > img {
-        width: 100px;
+        width: 80px;
     }
     
     nav > a {
@@ -45,8 +45,9 @@
     }
 
     main > section#sobre-nos {
-        grid-template-columns: 1fr;
-        justify-items: normal;
+        flex-flow: column;
+        justify-content: none;
+        margin-left: 0px;
     }
 
     section#sobre-nos > #sobre-nos-inf > h1 {
