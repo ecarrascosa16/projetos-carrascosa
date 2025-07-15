@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-primary: #F97316;     
+  --color-primary-light: #FDBA74;
+  --color-background: #F9FAFB;  
+  --color-dark: #1F2937;   
+  --color-darker: #111827;     
+  --color-text-secondary: #4B5563;
+  --color-gradient: radial-gradient(circle, rgb(255, 115, 34) 40%, rgba(255,105,16,1) 100%);  
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Fontes*/
+  --font-title: 'Raleway', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: var(--font-body);
+}
+
+header {
+    position: fixed;
+    background-color: var(--color-dark);
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.295);
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+header > nav > a {
+    position: relative;
+    bottom: 11px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: 1.8em;
+}
+
+header > nav > a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary-light);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+header > nav > a:hover::after {
+    width: 100%;
+}
+
+header > nav > a#icone {
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-darker);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.253);
+    position: relative;
+    top: 10px;
+    padding: 10px;
+}
+
+header > nav > a > img {
+    height: 80px;
+    display: block;
+}
+
+main {
+    padding-top: 80px;
+}
+
+main > #section-introduction {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+main > #section-introduction > h1 {
+    line-height: 95px;
+    color: var(--color-primary);
+    font-size: 7em;
+    font-family: var(--font-title);
+}
+
+main > #section-introduction > p {
+    color: var(--color-darker);
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+main > #section-introduction > #links-contatos > a > img{
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    margin: 30px 10px 10px 10px;
+}
+
+/*----------Sobre mim----------*/
+
+main > #section-about-me {
+    background-image: var(--color-gradient);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding-left: 100px;
+    height: 100vh;
+}
+
+main > #section-about-me > #text-about-me > h1 {
+    color: var(--color-white);
+    font-size: 6em;
+    font-family: var(--font-title);
+}
+
+main > #section-about-me > #text-about-me > p {
+    width: 750px;
+    color: var(--color-white);
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 28px;
+}
+
+/*----------Habilidades--------*/
+
+main > #skills {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main > #skills > h1 {
+    color: var(--color-primary);
+    font-size: 4em;
+    margin-bottom: 30px;
+    font-family: var(--font-title);
+}
+
+main > #skills > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+main > #skills > div > article {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #b3b6bd46;
+    padding: 10px;
+    width: 130px;
+    height: 160px;
+}
+
+main > #skills > div > article:hover {
+    background-color: #9799a046;
+    transition: .3s;
+}
+
+main > #skills > div > article > img {
+    height: 70px;
+    color: #4B5563;
+}
+
+main > #skills > div > article > p {
+    color: #1F2937;
+    font-weight: 700;
+}
+
+main > #projects {
+    background-image: var(--color-gradient);
+    height: 100vh;
+    padding: 100px;
+}
+
+main > #projects > h1 {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 4em;
+    font-family: var(--font-title);
+}
+
+main > #projects > div > article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 450px;
+    height: 200px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.212);
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+main > #projects > div > article > .img > img {
+    border-radius: 10px;
+}
+
+main > #projects > div > article > .content {
+    padding: 10px;
+}
+
+main > #projects > div > article h1 {
+    font-size: 1.5em;
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+main > #projects > div > article p {
+    font-size: .8em;
+    text-align: justify;
+}
+
+main > #projects > div > article > .content > .inf {
+    margin: 7px 0px 7px 0px;
+}
+
+main > #projects > div > article > .content > .inf > a > i {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 0px 3px 0px 3px;
+}
+
+main > #projects > div > article > .content > .inf > img {
+    height: 20px;
+    padding: 0px 3px 0px 3px;
+}
+
+main > #projects > div > article > .content > .tags {
+    display: flex;
+    gap: 10px;
+}
+
+.html {
+    background-color: hsla(12, 77%, 52%, 0.635);
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+.css {
+    background-color: #264ce4c2;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+.js {
+    background-color: #f7de1eb2;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+
+
