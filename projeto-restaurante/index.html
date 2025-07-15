@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="public/imgs/logos/restaurante-simbolo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public/imgs/logos/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-primary: #8A2719;
-        --color-secondary: #3F2116;
-        --color-background: #F3E9DC;
-        --color-accent: #C9744F;
-        --color-dark: #2B1B0E;  
-      }
-    </style>
     <title>Brasa & Sabor</title>
 </head>
 <body>
-  <header class="flex justify-around items-center bg-background h-20">
-    <img src="public/imgs/logos/logo-row.png" alt="logo brasa & sabor" class="h-14 relative bottom-1">
-    <span class="material-symbols-outlined">
-    menu
-    </span>
+  <header class="flex justify-around items-center shadow-md  bg-accent h-20 w-full z-50 fixed | lg:h-30">
+    <img src="public/imgs/logos/logo.png" alt="logo brasa & sabor" class="h-14">
+    <span onclick="openMenu()" id="buttom_menu_open" class="material-symbols-outlined cursor-pointer">menu</span>
+    <span onclick="closeMenu()" id="buttom_menu_close" class="material-symbols-outlined cursor-pointer">close</span>
   </header>
+  <div id="menu_mobile" class="flex justify-center bg-accent pt-20 w-full h-full fixed">
+    <nav class="flex flex-col">
+      <a href="#"  class="border p-2 px-32">Function 1</a>
+      <a href="#" class="border p-2 px-32">Function 2</a>
+      <a href="#" class="border p-2 px-32">Function 3</a>
+      <a href="#" class="border p-2 px-32">Function 4</a>
+    </nav>
+  </div>
+  <main class="pt-20 h-[10000px]">
+    <section id="img-main" class="bg-[url('public/imgs/restaurante.jpeg')] bg-no-repeat bg-center bg-cover h-50 | lg:bg-fixed">
+    </section>
+    
+  </main>
+  <script>
+    const buttomOpen = document.getElementById('buttom_menu_open')
+    const buttomClose = document.getElementById('buttom_menu_close')
+    const menuMobile = document.getElementById('menu_mobile')
+    menuMobile.style.display = 'none';
+    buttomClose.style.display = 'none';
+    function openMenu() {
+      buttomOpen.style.display = 'none';
+      buttomClose.style.display = 'block';
+      menuMobile.style.display = 'flex';
+    }
+    function closeMenu() {
+      buttomOpen.style.display = 'block';
+      buttomClose.style.display = 'none';
+      menuMobile.style.display = 'none';
+    }
+  </script>
 </body>

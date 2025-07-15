@@ -3,12 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  --color-primary: #B22222;
-  --color-secondary: #FF7F50;
-  --color-accent: #FFC107;
-  --color-background: #F5F5F5;
-  --color-dark: #4B2E0D;
-  --color-text: #4B5563;
-  --color-green: #2E8B57;
-  --color-white: #FFFFFF;
+  --color-accent: #F4F4F4;
+  --color-background: #F4F4F4;
+  --color-text: #333333; 
 }
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent);
+  z-index: -1;
+}
+
+#menu-mobile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent);
+  z-index: -1;
+}
+
