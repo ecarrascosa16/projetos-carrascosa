@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="style/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Brasa & Sabor</title>
+    <title>Essência</title>
 </head>
 <body>
-  <header class="flex justify-around items-center shadow-md  bg-accent h-20 w-full z-50 fixed | lg:h-30">
-    <img src="public/imgs/logos/logo.png" alt="logo brasa & sabor" class="h-14">
-    <span onclick="openMenu()" id="buttom_menu_open" class="material-symbols-outlined cursor-pointer">menu</span>
-    <span onclick="closeMenu()" id="buttom_menu_close" class="material-symbols-outlined cursor-pointer">close</span>
+  <header class="flex justify-around items-center shadow-md  bg-accent h-20 w-full z-50 fixed | lg:h-24">
+    
+    <img src="public/imgs/logos/logo.png" alt="logo Essência" class="h-14 lg:h-20">
+    <!--Header Desktop-->
+    <nav class="hidden | lg:flex lg:gap-20">
+      <a href="#"  class="text-center font-bold text-2xl p-2">Home</a>
+      <a href="#" class="text-center font-bold text-2xl p-2">Cardápio</a>
+      <a href="#" class="text-center font-bold text-2xl p-2">Sobre nós</a>
+      <a href="#" class="text-center font-bold text-2xl p-2">Informações</a>
+    </nav>
+    <!--Nav Mobile-->
+    <div class="lg:hidden">
+      <span onclick="openMenu()" id="buttom_menu_open" class="material-symbols-outlined cursor-pointer">menu</span>
+      <span onclick="closeMenu()" id="buttom_menu_close" class="material-symbols-outlined cursor-pointer">close</span>
+    </div>
   </header>
+  
+  <!--Nav Mobile-->
   <div id="menu_mobile" class="flex justify-center bg-accent pt-20 w-full h-full fixed">
-    <nav class="flex flex-col">
-      <a href="#"  class="border p-2 px-32">Function 1</a>
-      <a href="#" class="border p-2 px-32">Function 2</a>
-      <a href="#" class="border p-2 px-32">Function 3</a>
-      <a href="#" class="border p-2 px-32">Function 4</a>
+    <nav class="flex flex-col bg-white/90 | lg:hidden">
+      <a href="#"  class="text-center font-bold border p-2 px-32">Home</a>
+      <a href="#" class="text-center font-bold border p-2 px-32">Cardápio</a>
+      <a href="#" class="text-center font-bold border p-2 px-32">Sobre nós</a>
+      <a href="#" class="text-center font-bold border p-2 px-32">Informações</a>
     </nav>
   </div>
+
   <main class="pt-20 h-[10000px]">
-    <section id="img-main" class="bg-[url('public/imgs/restaurante.jpeg')] bg-no-repeat bg-center bg-cover h-50 | lg:bg-fixed">
+    <section id="img-main" class="flex justify-center items-center bg-[url('public/imgs/restaurante.jpeg')] bg-no-repeat bg-center bg-cover h-50 | lg:bg-fixed lg:h-[800px]">
+      <h1 class="text-8xl font-title">Essência</h1>
+      
     </section>
     
   </main>
-  <script>
-    const buttomOpen = document.getElementById('buttom_menu_open')
-    const buttomClose = document.getElementById('buttom_menu_close')
-    const menuMobile = document.getElementById('menu_mobile')
-    menuMobile.style.display = 'none';
-    buttomClose.style.display = 'none';
-    function openMenu() {
-      buttomOpen.style.display = 'none';
-      buttomClose.style.display = 'block';
-      menuMobile.style.display = 'flex';
-    }
-    function closeMenu() {
-      buttomOpen.style.display = 'block';
-      buttomClose.style.display = 'none';
-      menuMobile.style.display = 'none';
-    }
-  </script>
+  <script src="js/script.js"></script>
 </body>

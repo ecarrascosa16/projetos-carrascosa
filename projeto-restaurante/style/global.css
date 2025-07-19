@@ -6,6 +6,9 @@
   --color-accent: #F4F4F4;
   --color-background: #F4F4F4;
   --color-text: #333333; 
+
+  --font-body: 'Playfair Display', sans-serif;
+  --font-title: 'Inter', sans-serif;
 }
 
 header::before {
@@ -22,5 +25,7 @@ header::before {
   inset: 0;
   background: var(--color-accent);
   z-index: -1;
+
 }
+
 
