@@ -24,6 +24,10 @@
     padding: 0px;
 }
 
+html {
+       scroll-behavior: smooth;
+}
+
 p {
     font-family: var(--font-body);
 }
@@ -195,10 +199,16 @@ main > #skills > div > article > p {
     font-weight: 700;
 }
 
+/*----------Projetos--------*/
+
 main > #projects {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     background-image: var(--color-gradient);
     height: 100vh;
     padding: 100px;
+
 }
 
 main > #projects > h1 {
@@ -206,6 +216,13 @@ main > #projects > h1 {
     text-align: center;
     font-size: 4em;
     font-family: var(--font-title);
+    margin-bottom: 50px;
+}
+
+main > #projects > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
 }
 
 main > #projects > div > article {
@@ -218,8 +235,16 @@ main > #projects > div > article {
     border-radius: 10px;
 }
 
+main > #projects > div > article > .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main > #projects > div > article > .img > img {
     border-radius: 10px;
+    width: 180px;
+    
 }
 
 main > #projects > div > article > .content {
