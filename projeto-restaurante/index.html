@@ -10,15 +10,15 @@
     <title>Essência</title>
 </head>
 <body>
-  <header class="flex justify-around items-center shadow-md  bg-accent h-20 w-full z-50 fixed | lg:h-24">
+  <header class="flex justify-around items-center shadow-md color-background h-20 w-full z-50 fixed | lg:h-24">
     
     <img src="public/imgs/logos/logo.png" alt="logo Essência" class="h-14 lg:h-20">
     <!--Header Desktop-->
     <nav class="hidden | lg:flex lg:gap-20">
-      <a href="#"  class="text-center font-bold text-2xl p-2">Home</a>
-      <a href="#" class="text-center font-bold text-2xl p-2">Cardápio</a>
-      <a href="#" class="text-center font-bold text-2xl p-2">Sobre nós</a>
-      <a href="#" class="text-center font-bold text-2xl p-2">Informações</a>
+      <a href="#"  class="text-center font-title font-bold text-2xl p-2">Home</a>
+      <a href="#" class="text-center font-title font-bold text-2xl p-2">Cardápio</a>
+      <a href="#" class="text-center font-title font-bold text-2xl p-2">Sobre nós</a>
+      <a href="#" class="text-center font-title font-bold text-2xl p-2">Informações</a>
     </nav>
     <!--Nav Mobile-->
     <div class="lg:hidden">
@@ -38,11 +38,52 @@
   </div>
 
   <main class="pt-20 h-[10000px]">
-    <section id="img-main" class="flex justify-center items-center bg-[url('public/imgs/restaurante.jpeg')] bg-no-repeat bg-center bg-cover h-50 | lg:bg-fixed lg:h-[800px]">
-      <h1 class="text-8xl font-title">Essência</h1>
-      
+    <section id="img-main" class="flex flex-col justify-center items-center bg-[url('public/imgs/restaurante.png')] bg-no-repeat bg-center bg-cover h-50 | lg:bg-fixed lg:h-[800px]">
+      <h1 class="text-5xl font-title font-extrabold text-white | lg:text-8xl ">Essência</h1>
+      <a href="#" class="font-title color-background rounded-md text-1xl py-1 px-3 mt-2 | lg:text-3xl lg:py-2 lg:px-5 lg:mt-5">VER MAIS</a>
     </section>
     
+    <section id="featuredDishes" class="flex flex-col items-center justify-center py-10">
+      <h1 class="font-title font-semibold mb-5 text-3xl -tracking-tighter | lg:self-start lg:text-6xl lg:ml-44">Pratos em destaque</h1>
+      <div class="grid grid-cols-1 gap-6 | lg:grid-cols-5 lg:gap-10">
+        <article class="flex flex-col justify-center items-center w-60 | lg:w-80">
+          <img src="public/imgs/foods/carne-de-sol.png" alt="carne de sol" class="rounded-sm h-60">
+          <h2 class="font-title font-light text-2xl | lg:text-3xl lg:pt-2">Brasa do Sertão</h2>
+          <p class="text-justify text-sm font-light font-body h-20 | lg:text-lg lg:h-32">Carne de sol grelhada com manteiga de garrafa, acompanhada de purê de mandioca.</p>
+        </article> 
+
+      <article class="flex flex-col justify-center items-center w-60 | lg:w-80">
+        <img src="public/imgs/foods/risoto-de-frango.png" alt="risoto da terra" class="rounded-sm h-60">
+        <h2 class="font-title font-light text-2xl | lg:text-3xl lg:pt-2">Risoto da Serra</h2>
+        <p class="text-justify text-sm font-light font-body h-20 | lg:text-lg lg:h-32">Cremoso e aromático, com cogumelos frescos e um leve suspiro de parmesão.</p>
+      </article> 
+
+      <article class="flex flex-col justify-center items-center w-60 | lg:w-80">
+        <img src="public/imgs/foods/camarao.png" alt="Mar e Brasão" class="rounded-sm h-60">
+        <h2 class="font-title font-light text-2xl | lg:text-3xl lg:pt-2">Mar e Brasão</h2>
+        <p class="text-justify text-sm font-light font-body h-20 | lg:text-lg lg:h-32">Camarões ao alho em contraste com o arroz negro e seu perfume defumado.</p>
+      </article> 
+
+      <article class="flex flex-col justify-center items-center w-60 | lg:w-80">
+        <img src="public/imgs/foods/legumes-assado.png" alt="Essência da Terra" class="rounded-sm h-60">
+        <h2 class="font-title font-light text-2xl | lg:text-3xl lg:pt-2">Essência da Terra</h2>
+        <p class="text-justify text-sm font-light font-body h-20 | lg:text-lg lg:h-32">Legumes da estação assados lentamente com ervas nobres e final ácido suave.</p>
+      </article> 
+      
+      <article class="flex flex-col justify-center items-center w-60 | lg:w-80">
+        <img src="public/imgs/foods/peito-de-frango.png" alt="Frango ao Aroma" class="rounded-sm h-60">
+        <h2 class="font-title font-light text-2xl | lg:text-3xl lg:pt-2">Frango ao Aroma</h2>
+        <p class="text-justify text-sm font-light font-body h-20 | lg:text-lg lg:h-32">Peito de frango selado, sob um molho cítrico leve e acompanhamento herbal.</p>
+      </article>
+      </div>
+    </section>
+    
+    <section id="about-we" class="color-text -rotate-3 h-[600px]">
+<section id="about-we" class="color-text -rotate-3 h-[600px]">
+
+    </section>
+    </section>
+
   </main>
   <script src="js/script.js"></script>
 </body>
