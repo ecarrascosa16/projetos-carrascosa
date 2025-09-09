@@ -10,7 +10,6 @@
   background-color: #333333;
 }
 
-
 .font-body {
   font-family: 'Merriweather', sans-serif;
 }
@@ -33,7 +32,10 @@ header::before {
   inset: 0;
   background: var(--color-accent);
   z-index: -1;
+}
 
+#bg {
+  background-image: url(../public/imgs/background-deitado.svg);
 }
 
 
