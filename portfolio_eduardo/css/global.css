@@ -111,17 +111,21 @@ main > #section-introduction > p {
     font-weight: 600;
     font-size: 1.3em;
     padding: 5px;
-    letter-spacing: 5px;
+    margin-bottom: 20px;
 }
 
-main > #section-introduction > #links-contatos > a > img{
+main > #section-introduction > #links-contatos > a {
     height: 30px;
     width: 30px;
     background-color: var(--color-dark);
-    border: 1px solid var(--color-dark);
     border-radius: 5px;
     padding: 10px 50px 10px 50px;
-    margin: 30px 10px 10px 10px;
+    color: var(--color-background);
+    font-family: var(--font-title);
+}
+
+main > #section-introduction > #links-contatos > a i {
+    padding-left: 5px;
 }
 
 /*----------Sobre mim----------*/

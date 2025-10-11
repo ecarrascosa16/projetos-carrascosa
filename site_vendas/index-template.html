@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Carrascosa — Criação de Sites</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f97316', // Laranja suave
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold text-gray-900">Eduardo Carrascosa</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#sobre" class="hover:text-primary transition">Sobre mim</a>
+        <a href="#beneficios" class="hover:text-primary transition">Benefícios</a>
+        <a href="#portfolio" class="hover:text-primary transition">Portfólio</a>
+        <a href="#contato" class="hover:text-primary transition">Contato</a>
+      </nav>
+      <a href="#contato" class="md:hidden bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-600 transition">Contato</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-24 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight text-gray-900">
+        Sua marca merece mais <br class="hidden md:block">do que um link.
+      </h2>
+      <p class="text-gray-600 mb-6 text-lg">
+        Transformo ideias em sites modernos, rápidos e que realmente geram resultados para o seu negócio.
+      </p>
+      <a href="#contato" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition">
+        Fale comigo no WhatsApp
+      </a>
+    </div>
+    <div class="flex-1">
+      <img src="https://via.placeholder.com/400x400" alt="Foto de Eduardo Carrascosa"
+        class="rounded-2xl shadow-lg w-full object-cover">
+    </div>
+  </section>
+
+  <!-- Sobre mim -->
+  <section id="sobre" class="py-24 bg-gray-50 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-900">Quem sou eu</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-6">
+        Sou o <strong>Eduardo Carrascosa</strong>, desenvolvedor front-end apaixonado por criar sites simples e eficientes para negócios locais.
+        Acredito que um bom site deve ser bonito, leve e gerar resultados reais — como mais ligações, pedidos e visitas.
+      </p>
+      <ul class="text-gray-700 text-left md:text-center space-y-2">
+        <li>✅ Experiência com HTML, CSS, JavaScript e Tailwind</li>
+        <li>✅ Design moderno e adaptável a celulares</li>
+        <li>✅ Entrego sites completos e prontos para uso</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10 text-gray-900">Por que seu negócio precisa de um site?</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
+          <h3 class="text-xl font-semibold mb-3 text-primary">Mais credibilidade</h3>
+          <p class="text-gray-600">Um site profissional mostra que sua empresa é séria e confiável — algo que redes sociais sozinhas não passam.</p>
+        </div>
+        <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
+          <h3 class="text-xl font-semibold mb-3 text-primary">Mais clientes</h3>
+          <p class="text-gray-600">Com um site otimizado, pessoas te encontram facilmente no Google e entram em contato direto.</p>
+        </div>
+        <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
+          <h3 class="text-xl font-semibold mb-3 text-primary">Mais controle</h3>
+          <p class="text-gray-600">Você tem total controle sobre o visual, conteúdo e resultados — sem depender de algoritmos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="py-24 bg-gray-50 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10 text-gray-900">Alguns dos meus projetos</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 1" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Site de Pizzaria</h3>
+            <p class="text-gray-600 text-sm">Layout atraente e fácil de usar, com menu online e botão direto para pedidos.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 2" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Site de Barbearia</h3>
+            <p class="text-gray-600 text-sm">Site estiloso com agendamento online e foco na identidade visual do negócio.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 3" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Site de Loja Local</h3>
+            <p class="text-gray-600 text-sm">Página simples e direta com produtos, horários e contato via WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-24 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-gray-900">Vamos criar seu site?</h2>
+    <p class="text-gray-600 mb-8">Entre em contato comigo e vamos transformar seu negócio com um site de verdade.</p>
+    <a href="https://wa.me/5511999999999" target="_blank" class="bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-orange-600 transition text-lg">
+      Fale comigo no WhatsApp
+    </a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="py-6 bg-gray-100 text-center text-gray-500 text-sm">
+    © 2025 Eduardo Carrascosa — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
