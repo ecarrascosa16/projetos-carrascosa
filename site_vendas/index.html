@@ -13,87 +13,142 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="px-[5%] | sm:px-[10%]">
-    <header class="flex justify-center">
-        <div class="flex justify-between shadow-[2px_1px_4px_rgba(0,0,0,0.25)] px-3 py-2 mt-3 rounded-md w-full">
-            <div>
-                <h1 class="font-[poppins]">Eduardo Carrascosa</h1>
+<body>
+    <div id="main-one" class="px-[5%] | sm:px-[10%]">
+        <header class="flex justify-center">
+            <div class="flex justify-between shadow-[2px_1px_4px_rgba(0,0,0,0.25)] px-3 py-2 mt-3 rounded-md w-full">
+                <div>
+                    <h1 class="font-[poppins]">Eduardo Carrascosa</h1>
+                </div>
+                <nav>
+                    <ul class="hidden | sm:flex sm:gap-6 sm:justify-center">
+                        <li><a href="#sobre" class="font-[inter] hover:text-orange-500 transition">Sobre</a></li>
+                        <li><a href="#beneficios" class="font-[inter] hover:text-orange-500 transition">Benefícios</a></li>
+                        <li><a href="#portfolio" class="font-[inter] hover:text-orange-500 ">Portfólio</a></li>
+                        <li><a href="#contato" class="font-[inter] hover:text-orange-500 transition">Contato</a></li>
+                    </ul>
+                    <a href="#" class="bg-orange-500 text-white font-[inter] py-1 px-2 rounded-sm | sm:hidden">Contato</a>
+                </nav>
             </div>
-            <nav>
-                <ul class="hidden | sm:flex sm:gap-6 sm:justify-center">
-                    <li><a href="#sobre" class="font-[inter] hover:text-orange-500 transition">Sobre</a></li>
-                    <li><a href="#beneficios" class="font-[inter] hover:text-orange-500 transition">Benefícios</a></li>
-                    <li><a href="#portfolio" class="font-[inter] hover:text-orange-500 ">Portfólio</a></li>
-                    <li><a href="#contato" class="font-[inter] hover:text-orange-500 transition">Contato</a></li>
+        </header>
+        <main>
+            <section id="welcome" class="flex justify-center">
+                <div class="flex flex-col shadow-[2px_1px_4px_rgba(0,0,0,0.25)] p-2 pb-4 mt-3 rounded-md | lg:grid lg:grid-cols-[2fr_1fr] lg:p-6">
+                    <div>
+                        <h1 class="font-[poppins] w-3/4 font-bold text-3xl text-left | lg:text-6xl">Sua marca merece mais do que um <span class="text-orange-600">link.</span></h1>
+                        <p class="font-[inter] font-light pt-2 pb-4 | lg:text-3xl lg:w-10/12 lg:pt-4 lg:pb-6">Transformo ideias em sites modernos, rápidos e que realmente geram resultados para o seu negócio.</p>
+                        <a href="https://wa.me/5511974485503" target="_blank" class="bg-orange-500 text-white px-3 py-2 rounded-lg font-[poppins] hover:bg-orange-600 transition | lg:px-5 lg:py-3 lg:text-xl">
+                            Fale comigo no WhatsApp
+                        </a>
+                    </div>
+                    <div>
+                    <img src="assets/imgs/homem.png" class="hidden | lg:block lg:max-w-[400px] lg:m-auto" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="benefits" class="my-7 | lg:grid lg:grid-cols-2 ">
+                <div>
+                    <h2 class="font-[inter] font-bold text-2xl w-11/12 | lg:text-4xl">Por que escolher meu serviço de criação de sites?</h2>
+                    <p class="font-[inter] font-light pt-2 pb-4 w-11/12 | lg:text-2xl">Seja encontrado, lembrado e confiável. Meus sites fazem seu negócio se destacar e atrair mais clientes.</p>
+                    <div class="hidden | lg:block lg:bg-[url(assets/imgs/beneficios.png)] lg:bg-contain lg:bg-no-repeat lg:bg-center lg:shadow-[2px_1px_4px_rgba(0,0,0,0.25)] lg:h-60 lg:w-11/12">
+        
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4 text-center">
+                    <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
+                        <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-globe"></i> Mais visibilidade</h3>
+                        <p class="font-[inter] font-light">Clientes locais encontram você no Google e no Maps.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
+                        <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-bolt"></i> Sites rápidos</h3>
+                        <p class="font-[inter] font-light">Carregamento leve e otimizado para celular.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
+                        <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-palette"></i> Design que destaca</h3>
+                        <p class="font-[inter] font-light">Visual profissional e moderno que reforça sua marca.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="about-me" class="pb-10" >
+                <h2 class="font-[inter] font-bold text-center text-3xl w-11/12 | lg:text-4xl">Quem sou eu?</h2>
+                <p class="text-center py-2 | lg:text-2xl lg:pb-6">Sou o <span class="text-orange-600">Eduardo Carrascosa</span>, desenvolvedor front-end apaixonado por criar sites simples e eficientes para negócios locais. Acredito que um bom site deve ser bonito, leve e gerar resultados reais, como mais ligações, pedidos e visitas.</p>
+                <ul class="list-none | lg:text-2xl lg:text-center">
+                    <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Experiência com HTML, CSS, JavaScript e Tailwind</li>
+                    <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Design moderno e adaptável a celulares</li>
+                    <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Entrego sites completos e prontos para uso</li>
                 </ul>
-                <a href="#" class="bg-orange-500 text-white font-[inter] py-1 px-2 rounded-sm | sm:hidden">Contato</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="welcome" class="flex justify-center">
-            <div class="flex flex-col shadow-[2px_1px_4px_rgba(0,0,0,0.25)] p-2 pb-4 mt-3 rounded-md | lg:grid lg:grid-cols-[2fr_1fr] lg:p-6">
-                <div>
-                    <h1 class="font-[poppins] w-3/4 font-bold text-3xl text-left | lg:text-6xl">Sua marca merece mais do que um <span class="text-orange-600">link.</span></h1>
-                    <p class="font-[inter] font-light pt-2 pb-4 | lg:text-3xl lg:w-10/12 lg:pt-4 lg:pb-6">Transformo ideias em sites modernos, rápidos e que realmente geram resultados para o seu negócio.</p>
-                    <a href="#contato" class="bg-orange-500 text-white px-3 py-2 rounded-lg font-[poppins] hover:bg-orange-600 transition | lg:px-5 lg:py-3 lg:text-xl">
-                        Fale comigo no WhatsApp
-                    </a>
-                </div>
-                <div>
-                <img src="assets/imgs/homem.png" class="hidden | lg:block lg:max-w-[400px] lg:m-auto" alt="">
-                </div>
-            </div>
-        </section>
-        <section id="benefits" class="my-7 | lg:grid lg:grid-cols-2 ">
-            <div>
-                <h2 class="font-[inter] font-bold text-2xl w-11/12 | lg:text-4xl">Por que escolher meu serviço de criação de sites?</h2>
-                <p class="font-[inter] font-light pt-2 pb-4 w-11/12 | lg:text-2xl">Seja encontrado, lembrado e confiável. Meus sites fazem seu negócio se destacar e atrair mais clientes.</p>
-                <div class="hidden | lg:block lg:bg-[url(assets/imgs/beneficios.png)] lg:bg-contain lg:bg-no-repeat lg:bg-center lg:shadow-[2px_1px_4px_rgba(0,0,0,0.25)] lg:h-60 lg:w-11/12">
-                    
-                </div>
-            </div>
-            <div class="grid grid-cols-1 gap-4 text-center">
-                <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-                    <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-globe"></i> Mais visibilidade</h3> 
-                    <p class="font-[inter] font-light">Clientes locais encontram você no Google e no Maps.</p>
-                </div>
-                <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-                    <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-bolt"></i> Sites rápidos</h3>
-                    <p class="font-[inter] font-light">Carregamento leve e otimizado para celular.</p>
-                </div>
-                <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-                    <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-palette"></i> Design que destaca</h3>
-                    <p class="font-[inter] font-light">Visual profissional e moderno que reforça sua marca.</p>
-                </div>
-            </div>
-        </section>
-        <section id="about-me" class="pb-10" >
-            <h2 class="font-[inter] font-bold text-center text-3xl w-11/12 | lg:text-4xl">Quem sou eu?</h2>
-            <p class="text-center py-2">Sou o <span class="text-orange-600">Eduardo Carrascosa</span>, desenvolvedor front-end apaixonado por criar sites simples e eficientes para negócios locais. Acredito que um bom site deve ser bonito, leve e gerar resultados reais, como mais ligações, pedidos e visitas.</p>
-            <ul class="list-none">
-                <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Experiência com HTML, CSS, JavaScript e Tailwind</li>
-                <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Design moderno e adaptável a celulares</li>
-                <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Entrego sites completos e prontos para uso</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <div class="p-4 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-                <h2 class="font-[inter] font-bold text-center text-3xl w-11/12 pb-4 | lg:text-4xl">Meus projetos</h2>
-                    <div class="mb-4">
-                        <h3 class="font-[inter] font-bold w-11/12 | lg:text-4xl">CineMel</h3>
-                        <div class="flex justify-center items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-[url(assets/imgs/cinemel.PNG)] bg-cover h-32 hover:scale-105">
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <h3 class="font-[inter] font-bold w-11/12 | lg:text-4xl">Essência</h3>
-                        <div class="flex justify-center items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-[url(assets/imgs/essencia.PNG)] bg-cover h-32 hover:scale-105">
+            </section>
+            <section id="projects">
+                <div class="p-4 rounded-2xl border border-gray-100 shadow-md transition bg-white">
+                    <h2 class="font-[inter] font-bold text-center text-3xl w-11/12 pb-4 | lg:text-4xl">Meus projetos</h2>
+                        <div class="grid grid-cols-1 | lg:grid-cols-2">
+                            <div class="mb-4">
+                                <h3 class="font-[inter] font-bold w-11/12 | lg:text-4xl lg:text-center lg:pb-3 lg:w-full">CineMel</h3>
+                                <div class="flex justify-center items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-[url(assets/imgs/cinemel-bg.PNG)] bg-cover h-32 hover:scale-105 | lg:w-3/4 lg:h-52 lg:m-auto" onclick="abrirPopCineMel()">
+                                </div>
+                            </div>
+                            <!--POP CINEMEL-->
+                            <section id="pop-cinemel" class="hidden">
+                                <div class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 ">
+                                    <div class="bg-white rounded-2xl shadow-lg max-w-3xl w-11/12 p-8 relative animate-in fade-in duration-300">
+                                    
+                                    <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="fecharPopCineMel()">
+                                        <i class="fa-solid fa-xmark text-xl"></i>
+                                    </button>
+
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <img src="assets/imgs/cinemel.png" alt="Projeto cinemel" class="rounded-xl shadow-sm object-cover w-full">
+
+                                        <div>
+                                        <h3 class="text-2xl font-[poppins] font-semibold text-gray-800 mb-2">Landing Page para Barbearia</h3>
+                                        <p class="text-gray-600 font-[inter] text-sm mb-4">
+                                            Site moderno e otimizado para atrair novos clientes, com foco em design responsivo e carregamento rápido.
+                                        </p>
+
+                                        <div class="mb-4">
+                                            <h4 class="font-semibold text-gray-800 mb-2 text-sm">Tecnologias usadas:</h4>
+                                            <div class="flex flex-wrap gap-2 text-sm">
+                                            <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">HTML</span>
+                                            <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">CSS</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex items-center gap-4">
+                                            <a href="#" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-orange-600 font-medium">
+                                            <i class="fa-brands fa-github text-lg"></i> GitHub
+                                            </a>
+                                            <a href="#" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-orange-600 font-medium">
+                                            <i class="fa-solid fa-globe text-lg"></i> Ver site
+                                            </a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </section>
+                            <div class="mb-4">
+                                <h3 class="font-[inter] font-bold w-11/12 | lg:text-4xl lg:text-center lg:pb-3 lg:w-full">Essência</h3>
+                                <div class="flex justify-center items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-[url(assets/imgs/essencia.PNG)] bg-cover h-32 hover:scale-105 | lg:w-3/4 lg:h-52 lg:m-auto">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section id="contact" class="py-24 px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4 text-gray-900 | lg:text-4xl">Vamos criar seu site?</h2>
+                <p class="text-gray-600 mb-8 | lg:text-2xl">Entre em contato comigo e vamos transformar seu negócio com um site de verdade.</p>
+                <a href="https://wa.me/5511974485503" target="_blank" class="bg-orange-500 text-white px-8 py-4 rounded-lg font-medium hover:bg-orange-600 transition text-lg">
+                Fale comigo no WhatsApp
+                </a>
+            </section>
+    </div>
+        <footer class="py-6 w-full bg-gray-100 text-center text-gray-500 text-sm">
+            © 2025 Eduardo Carrascosa — Todos os direitos reservados.
+        </footer>
     </main>
     <script src="https://kit.fontawesome.com/13c88f5cf0.js" crossorigin="anonymous"></script>
+    <script src="js/pops.js" defer></script>
 </body>
 </html>
