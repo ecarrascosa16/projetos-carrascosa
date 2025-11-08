@@ -1,0 +1,8 @@
+header {
+  transition: transform 0.3s ease;
+}
+
+/* Esconde o header */
+.header-hidden {
+  transform: translateY(-100%);
+}
