@@ -30,33 +30,73 @@
   </style>
 </head>
 <body>
-  <header id="header" class="z-50 fixed top-0 left-0 w-full h-36 bg-black/85">
-    <div class="flex items-center justify-around h-8 border-b border-details text-segundary text-sm">
-        <p class=""><i class="fa-solid fa-location-dot pr-2"></i>Rua Alegria Nazaré, 353</p>
-        <p class=""><i class="fa-brands fa-whatsapp pr-2"></i>(+55) 11 97232-7893</p>
+  <header id="header" class="z-50 fixed top-0 left-0 w-full h-36 bg-black/65">
+    <div class="flex items-center justify-around h-8 border-b border-support text-segundary text-sm">
+        <div class="flex items-center | lg:justify-normal">
+            <p class="pr-10"><i class="fa-solid fa-location-dot pr-2"></i>Rua Alegria Nazaré, 353</p>
+            <p></p><i class="fa-brands fa-whatsapp pr-2"></i>(+55) 11 97232-7893</p>
+        </div>
+        <div class="hidden | lg:flex lg:items-center lg:text-segundary lg:text-sm">
+            <a href=""><i class="fa-brands fa-facebook pr-7"></i></a>
+            <a href=""><i class="fa-brands fa-twitter pr-7"></i></a>
+            <a href=""><i class="fa-brands fa-youtube pr-7"></i></a>
+            <a href=""><i class="fa-brands fa-instagram pr-7"></i></a>
+        </div>
     </div>
+    
     <div class="flex justify-around items-center px-6 text-white pt-3">
         <img src="assets/imagens/logo-sem-fundo.png" class="w-24 brightness-150" alt="Logo do salão">
-        <i class="fa-solid fa-bars text-xl"></i>
+        <p class="lg:hidden"><i class="fa-solid fa-bars text-xl"></i></p>
+        <nav class="hidden | lg:flex">
+            <ul class="flex">
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Home</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Quem Somos</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Serviços</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Galeria</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Notícias</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Contatos</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
 
-  <main>
+  <main class="h-[10000px]">
     <section id="main-header">
-        
-      <div class="relative w-full h-[500px] py-[100px] bg-[url('assets/imagens/background-main-vertical.png')] bg-no-repeat bg-cover text-red-500">
+      <div class="relative w-full h-[500px] py-[100px] bg-[url('assets/imagens/background-main-vertical.png')] bg-no-repeat bg-cover | lg:bg-[url(assets/imagens/background-main-horizontal.jpg)] lg:bg-center lg:h-[600px]">
             <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative z-10 text-white p-5 pt-[100px]">
-                <p class="font-cursive text-4xl text-details">— Belle Aura Studio</p>
-                <h1 class="font-title w-10/12 text-segundary text-4xl">O melhor salão de beleza para mulheres</h1>
-                <p class="font-parag text-details pb-5">Cabelo - Skincare - Unhas</p>
-                <a href="" class="border px-4 py-2">Agende seu horário</a>
+            <div class="relative z-10 text-white p-5 pt-[100px] | lg:p-30 lg:pt-[90px]">
+                <p class="font-cursive text-4xl text-primary | lg:text-6xl">— Belle Aura Studio</p>
+                <h1 class="font-title w-10/12 text-segundary text-4xl | lg:text-7xl lg:w-8/12">O melhor salão de beleza para mulheres</h1>
+                <p class="font-parag text-primary pb-5 | lg:pt-4 lg:text-xl">Cabelo - Skincare - Unhas</p>
+                <a href="" class="border px-4 py-2 | lg:text-xl">Agende seu horário</a>
             </div>
       </div>
     </section>
 
-    <section class="p-8">
-      <div style="height:1500px"></div>
+    <section id="quem-somos" class="grid grid-cols-1 justify-center items-center px-8 pt-10 | lg:grid-cols-2 lg:pt-20">
+        <div class="inline-block relative m-auto pb-8 ">
+            <img src="assets/imagens/faixada-salao.png" class="w-80 rounded-xl relative z-10 | lg:w-[480px]">
+            <img src="assets/imagens/interior-salao.png" class="hidden | lg:flex  lg:w-50 lg:rounded-xl lg:absolute lg:top-[30%] lg:right-[-10%] lg:z-10 lg:shadow-md">
+            <span class="absolute inset-0 -top-3 -left-3 w-full h-full border-4 border-details rounded-xl z-0"></span>
+        </div>
+        <div>
+            <p class="mb-4 text-lg indent-5 font-parag">
+                No <strong>Belle Aura Studio</strong>, acreditamos que beleza é expressão, cuidado e bem-estar.
+                Nosso espaço foi pensado para que cada mulher se sinta acolhida, valorizada e confiante no próprio brilho.
+            </p>
+            <p class="mb-4 text-lg indent-5 font-parag">
+                Somos uma equipe apaixonada por estética, especializada em transformar autoestima através de experiências
+                personalizadas. Aqui, cada detalhe importa: desde o atendimento atencioso até a escolha de produtos de
+                alta qualidade que respeitam sua pele, cabelo e estilo.
+            </p>
+            <p class="mb-4 text-lg indent-5 font-parag">
+                Nosso propósito é oferecer mais do que serviços de beleza. Queremos criar momentos de tranquilidade,
+                conforto e conexão com aquilo que faz você se sentir única.
+            </p>
+            <p class="text-lg font-parag italic text-[--color-primary] font-medium text-center mt-10">
+                “Cuidar de você é a parte mais bonita da nossa arte.”
+            </p>
+        </div>
     </section>
   </main>
 

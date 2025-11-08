@@ -6,3 +6,27 @@ header {
 .header-hidden {
   transform: translateY(-100%);
 }
+
+#img {
+  position: relative;
+  display: inline-block;
+}
+
+#img {
+  width: 350px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+#img::before {
+  content: "";
+  position: absolute;
+  top: -12px;   /* controla o quanto sai */
+  left: -12px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #D97B93;
+  border-radius: 12px;
+  z-index: 1;
+}
